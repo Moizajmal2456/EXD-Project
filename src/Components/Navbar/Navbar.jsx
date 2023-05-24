@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import AddCart from "../../Images/Addtocart.png";
 import styles from "./styles.module.scss";
 
@@ -14,7 +15,9 @@ return(
         </ul>
      </div>
      <div className={styles.Right_Section}>
+        <Link to="/login">
         <button>Login</button>
+        </Link>
         <img src={AddCart} alt="Add to cart"/>
      </div>
     </div>

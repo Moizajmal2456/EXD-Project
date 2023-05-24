@@ -1,0 +1,33 @@
+.Partners_Wrapper{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-bottom: 50px;
+    h1{
+        text-align: center;
+    }
+    .Intro{
+     width: 100%;
+     display: flex;
+     margin: auto;
+     justify-content: space-around;
+        .Shirts{
+            display: flex;
+        flex-direction: column;
+    }
+    .Pents{
+        display: flex;
+        flex-direction: column;
+    }
+    .Bags{
+        display: flex;
+        flex-direction: column;
+    }
+    .Shoes{
+        display: flex;
+        flex-direction: column;
+    }
+}
+}
