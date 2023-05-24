@@ -8,16 +8,36 @@
         gap: 40%;
         display: flex;
         list-style-type: none;
+        .Home{
+            color: black;
+        }
         li{
             margin-right: 12px;
             display: inline-block;
         }
+            a {
+                color: black;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
     }
     .Right_Section{
         width: 40%;
         display: flex;
         justify-content: center;
         gap: 50px;
+        a{
+            text-decoration: none;
+        }
+        button{
+            border-radius: 10%;
+            text-decoration: none;
+            &:hover{
+                border-radius: 40%;
+            }
+        }
         img{
             width: 10%;
         }

@@ -10,9 +10,9 @@ return(
      <div className={style.Input_Fields}>
         <h2>Login to your account</h2>
         <h4>Welcome back!</h4>
-        <input type="string" required placeholder=" Enter Email"/>
-        <input type="string" required placeholder="Enter Password"/>
-        <button>Login</button>
+        <input className={style.Email} type="string" required placeholder=" Enter Email"/>
+        <input className={style.Email} type="string" required placeholder="Enter Password"/>
+        <button className={style.Button}>Login</button>
         <div className={style.Forgot}>
         <Link to="/forgotpassword">
          <h4>Forgot Password?</h4>
@@ -23,13 +23,13 @@ return(
          <div className={style.Text}><p>OR</p></div>
          <div className={style.Line}></div>
          </div>
-        <button > <img src={Facebook} alt="facebook icon"/>Continue with Facebook</button>
-        <button> <img src={Google} alt="google icon"/>Continue with Google</button>
-        <button> <img src={Email} alt="email icon"/>Continue with Email</button>
+        <button className={style.Button}> <img src={Facebook} alt="facebook icon"/>Continue with Facebook</button>
+        <button className={style.Button}> <img src={Google} alt="google icon"/>Continue with Google</button>
+        <button className={style.Button}> <img src={Email} alt="email icon"/>Continue with Email</button>
         <div className={style.Register}>
         <h4><u>Don't have an account? Register Now</u></h4>
         <Link to="/signin">
-        <button>Signin</button>
+        <button className={style.Button}>Signin</button>
         </Link>
         </div>
      </div>

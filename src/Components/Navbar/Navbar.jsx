@@ -7,9 +7,9 @@ return(
     <div className={styles.Navbar_Wrapper}>
      <div className={styles.Left_Section}>
         <ul>
-            <Link to="/">
-            <li>Home</li>
-            </Link>
+            <li className={styles.Home}>
+            <Link to="/">Home</Link>
+            </li>
             <li>Products</li>
             <li>Blogs</li>
             <li>Contact Us</li>
@@ -17,9 +17,9 @@ return(
         </ul>
      </div>
      <div className={styles.Right_Section}>
-        <Link to="/login">
-        <button>Login</button>
-        </Link>
+        <button>
+        <Link to="/login">Login </Link>
+        </button>
         <img src={AddCart} alt="Add to cart"/>
      </div>
     </div>
