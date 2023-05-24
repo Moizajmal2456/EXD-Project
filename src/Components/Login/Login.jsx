@@ -1,8 +1,8 @@
 import style from "./styles.module.scss";
-import { Button } from "../Button/Button";
 import Email from "../../Images/email.svg";
 import Facebook from "../../Images/facebook.svg";
 import Google from "../../Images/google.svg";
+import { Link } from "react-router-dom";
 
 export const Login = () => {
 return(
@@ -12,9 +12,11 @@ return(
         <h4>Welcome back!</h4>
         <input type="string" required placeholder=" Enter Email"/>
         <input type="string" required placeholder="Enter Password"/>
-        <Button title={"LOGIN"} type={"secondary"}/>
+        <button>Login</button>
         <div className={style.Forgot}>
+        <Link to="/forgotpassword">
          <h4>Forgot Password?</h4>
+        </Link>
         </div>
          <div className={style.Or}>
          <div className={style.Line}></div>
@@ -26,7 +28,9 @@ return(
         <button> <img src={Email} alt="email icon"/>Continue with Email</button>
         <div className={style.Register}>
         <h4><u>Don't have an account? Register Now</u></h4>
-        <button></button>
+        <Link to="/signin">
+        <button>Signin</button>
+        </Link>
         </div>
      </div>
     </div>

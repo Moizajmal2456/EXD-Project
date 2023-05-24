@@ -7,7 +7,9 @@ return(
     <div className={styles.Navbar_Wrapper}>
      <div className={styles.Left_Section}>
         <ul>
+            <Link to="/">
             <li>Home</li>
+            </Link>
             <li>Products</li>
             <li>Blogs</li>
             <li>Contact Us</li>
