@@ -12,8 +12,12 @@ return(
             </li>
             <li>Products</li>
             <li>Blogs</li>
-            <li>Contact Us</li>
-            <li>About Us</li>
+            <li className={styles.Home}>
+            <Link to="/contactus">Contact Us</Link>
+            </li>
+            <li className={styles.Home}>
+            <Link to="/aboutus">About Us</Link>
+            </li>
         </ul>
      </div>
      <div className={styles.Right_Section}>

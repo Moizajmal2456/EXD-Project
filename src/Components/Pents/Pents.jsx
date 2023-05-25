@@ -16,17 +16,17 @@ return(
         <Cards 
           image={Pent2}
           heading={"Jeans Cotton"}
-          price={"Rs 1550/-"}
+          price={"Rs 1750/-"}
           buttonText={"Buy"}/>
         <Cards 
           image={Pent3}
           heading={"Jeans Pent"}
-          price={"Rs 1550/-"}
+          price={"Rs 1950/-"}
           buttonText={"Buy"}/>
         <Cards 
           image={Pent4}
           heading={"Trousers"}
-          price={"Rs 1550/-"}
+          price={"Rs 1250/-"}
           buttonText={"Buy"}/>
     </div>
 );

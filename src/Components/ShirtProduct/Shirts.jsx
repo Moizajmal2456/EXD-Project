@@ -11,22 +11,22 @@ return(
       <Cards 
       image={Shirt1}
       heading={"Shirt"}
-      price={"Rs 1550/-"}
+      price={"Rs 1150/-"}
       buttonText={"Buy"}/>
         <Cards 
       image={Shirt2}
       heading={"Shirt"}
-      price={"Rs 1550/-"}
+      price={"Rs 1250/-"}
       buttonText={"Buy"}/>
         <Cards 
       image={Shirt3}
       heading={"Shirt"}
-      price={"Rs 1550/-"}
+      price={"Rs 1650/-"}
       buttonText={"Buy"}/>
         <Cards 
       image={Shirt4}
       heading={"Shirt"}
-      price={"Rs 1550/-"}
+      price={"Rs 1250/-"}
       buttonText={"Buy"}/>
     </div>
 );

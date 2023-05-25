@@ -6,7 +6,7 @@ return(
 <img src={image} alt="Bag pic"/>
 <h4>{heading}</h4>
 <p>{price}</p>
-<button>{buttonText}</button>
+<button className={style.Button}>{buttonText}</button>
 </div>
 );
 };
