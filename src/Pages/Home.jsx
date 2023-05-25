@@ -4,6 +4,7 @@ import { HeroSection } from "../Components/HeroSection/HeroSection";
 import { Navbar } from "../Components/Navbar/Navbar";
 import { Partners } from "../Components/Partners/Partners";
 import { Pents } from "../Components/Pents/Pents";
+import { ServiceList } from "../Components/Services/ServiceList";
 import { Shirts } from "../Components/ShirtProduct/Shirts";
 import { Shoes } from "../Components/ShoesProduct/Shoes";
 
@@ -16,6 +17,7 @@ return(
     <Pents/>
     <Bags/>
     <Shoes/>
+    <ServiceList/>
     <Partners/>
     <Footer/>
     </>
