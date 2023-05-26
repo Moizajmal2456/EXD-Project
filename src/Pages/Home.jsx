@@ -1,6 +1,6 @@
 import { Bags } from "../Components/BagsProduct/Bags";
 import { Footer } from "../Components/Footer/Footer";
-import { HeroSection } from "../Components/HeroSection/HeroSection";
+import { Hero } from "../Components/HeroSection/HeroSection";
 import { Navbar } from "../Components/Navbar/Navbar";
 import { Partners } from "../Components/Partners/Partners";
 import { Pents } from "../Components/Pents/Pents";
@@ -12,7 +12,7 @@ export const HomePage = () => {
 return(
     <>
     <Navbar/>
-    <HeroSection/>
+    <Hero/>
     <Shirts/>
     <Pents/>
     <Bags/>

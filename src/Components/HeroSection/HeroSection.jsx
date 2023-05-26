@@ -1,7 +1,7 @@
 import style from "./styles.module.scss";
 import HeroImage from "../../Images/herosection.jpg";
 
-export const HeroSection = () => {
+export const Hero = () => {
 return(
     <div className={style.HeroSection_Erapper}> 
      <div className={style.Left_Section}>

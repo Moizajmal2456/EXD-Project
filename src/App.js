@@ -6,6 +6,10 @@ import { SignInPage } from './Pages/SignIn';
 import { ForgotPasswordPage } from './Pages/ForgotPassword';
 import { AboutUsPage } from './Pages/AboutUs';
 import { ContactUsPage } from './Pages/ContactUs';
+import { ShoesPage } from './Pages/ShoesPage';
+import { PentsPage } from './Pages/PentsPage';
+import { BagsPage } from './Pages/BagsPage';
+import { ShirtsPage } from './Pages/ShirtsPage';
 
 function App() {
   return (
@@ -18,6 +22,10 @@ function App() {
       <Route path="/forgotpassword" element={<ForgotPasswordPage/>}/>
       <Route path="/aboutus" element={<AboutUsPage/>}/>
       <Route path="/contactus" element={<ContactUsPage/>}/>
+      <Route path="/shirtspage" element={<ShirtsPage/>}/>
+      <Route path="/pentspage" element={<PentsPage/>}/>
+      <Route path="/bagspage" element={<BagsPage/>}/>
+      <Route path="/shoespage" element={<ShoesPage/>}/>
     </Routes>
     </BrowserRouter>
   </div>

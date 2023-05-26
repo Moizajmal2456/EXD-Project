@@ -1,13 +1,22 @@
 import { Link } from "react-router-dom";
 import AddCart from "../../Images/Addtocart.png";
 import styles from "./styles.module.scss";
-import { useState } from "react";
 
 export const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
   
-    const toggleDropdown = () => {
-      setIsOpen(!isOpen);
+    const handleOptionSelected = (event) => {
+        const selectedOption = event.target.value;
+        if (selectedOption === 'Shirt') {
+          window.location.href = "/shirtspage";
+        } else if (selectedOption === 'Pents') {
+            window.location.href = "/pentspage";
+        } else if (selectedOption === 'Bags') {
+            window.location.href = "/bagspage";
+        } else if (selectedOption === 'Shoes'){
+            window.location.href = "/shoespage";
+        } else {
+            window.location.href = "/";
+        }
     }
 return(
     <div className={styles.Navbar_Wrapper}>
@@ -17,7 +26,7 @@ return(
             <Link to="/">Home</Link>
             </li>
             <div className={styles.Select_Wrapper}>
-            <select>
+            <select onChange={handleOptionSelected}>
                 <option value="Product">Select Product</option>
                 <option value="Shirt">Shirts</option>
                 <option value="Pents">Pents</option>
