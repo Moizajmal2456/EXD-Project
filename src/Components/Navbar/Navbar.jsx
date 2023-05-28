@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import AddCart from "../../Images/Addtocart.png";
+import AddCart from "../../../public/Images/Addtocart.png";
 import styles from "./styles.module.scss";
 
 export const Navbar = () => {
