@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import AddCart from "../../../public/Images/Addtocart.png";
 import styles from "./styles.module.scss";
 
 export const Navbar = () => {
@@ -47,7 +46,7 @@ return(
         <button>
         <Link to="/login">Login </Link>
         </button>
-        <img src={AddCart} alt="Add to cart"/>
+        <img src="/Images/Addtocart.png" alt="Add to cart"/>
      </div>
     </div>
 );

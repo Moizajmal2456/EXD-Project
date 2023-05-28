@@ -1,5 +1,4 @@
 import style from "./styles.module.scss";
-import HeroImage from "../../../public/Images/herosection.jpg";
 
 export const Hero = () => {
 return(
@@ -11,7 +10,7 @@ return(
          <button className={style.Button}>Checkout</button>
      </div>
      <div className={style.Right_Section}>
-        <img  src={HeroImage} alt="Hero section image" />
+        <img  src="/Images/herosection.jpg" alt="Hero section image" />
      </div>
     </div>
 );

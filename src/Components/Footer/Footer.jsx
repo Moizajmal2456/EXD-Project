@@ -1,9 +1,4 @@
 import style from "./styles.module.scss";
-import Instagram from "../../Images/instagram.webp";
-import Linkedin from "../../Images/linkedin.webp";
-import Twitter from "../../Images/twitter.webp";
-import Youtube from "../../Images/twitter.webp";
-import Facebook from "../../Images/facebook.webp";
 
 export const Footer = () => {
 return(
@@ -28,11 +23,11 @@ return(
 <div className={style.Follow}>
     <h3>Follow Us</h3> 
         <div className={style.Images}>
-            <img src={Instagram} alt="instgram" /> 
-            <img src={Linkedin} alt="linkedin" />
-            <img src={Twitter} alt="twitter" />
-            <img src={Youtube} alt="youtube" />
-            <img src={Facebook} alt="facebook" />         
+            <img src="/Images/instagram.webp" alt="instgram" /> 
+            <img src="/Images/linkedin.webp" alt="linkedin" />
+            <img src="/Images/twitter.webp" alt="twitter" />
+            <img src="/Images/twitter.webp" alt="youtube" />
+            <img src="/Images/facebook.webp" alt="facebook" />         
         </div>
 </div>
 </div>

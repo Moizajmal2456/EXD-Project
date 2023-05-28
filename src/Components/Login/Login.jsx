@@ -1,7 +1,4 @@
 import style from "./styles.module.scss";
-import Email from "../../Images/email.svg";
-import Facebook from "../../Images/facebook.svg";
-import Google from "../../Images/google.svg";
 import { Link } from "react-router-dom";
 
 export const Login = () => {
@@ -23,9 +20,9 @@ return(
          <div className={style.Text}><p>OR</p></div>
          <div className={style.Line}></div>
          </div>
-        <button className={style.Button}> <img src={Facebook} alt="facebook icon"/>Continue with Facebook</button>
-        <button className={style.Button}> <img src={Google} alt="google icon"/>Continue with Google</button>
-        <button className={style.Button}> <img src={Email} alt="email icon"/>Continue with Email</button>
+        <button className={style.Button}> <img src="/Images/facebook.svg" alt="facebook icon"/>Continue with Facebook</button>
+        <button className={style.Button}> <img src="/Images/egoogle.svg" alt="google icon"/>Continue with Google</button>
+        <button className={style.Button}> <img src="/Images/email.svg" alt="email icon"/>Continue with Email</button>
         <div className={style.Register}>
         <h4><u>Don't have an account? Register Now</u></h4>
         <Link to="/signin">

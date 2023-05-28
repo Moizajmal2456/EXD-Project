@@ -1,5 +1,4 @@
 import React from 'react';
-import Contactus from "../../Images/Contact Us.jpeg";
 import style from "./styles.module.scss";
 
 export const ContactPage = () => {
@@ -21,7 +20,7 @@ export const ContactPage = () => {
             <textarea className={style.Email} type="text" placeholder='Message' rows="10"/>
       </div>
       <div className={style.Right_Section}>
-        <img src={Contactus} alt="" />
+        <img src="/Images/Contact Us.jpeg" alt="" />
       </div>
     </div>
     <div className={style.Button}>

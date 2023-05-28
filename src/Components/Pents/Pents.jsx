@@ -1,33 +1,17 @@
 import { Cards } from "../../Cards/Card/Cards";
 import style from "./styles.module.scss";
-import Pent1 from "../../Images/Pent1.jpg";
-import Pent2 from "../../Images/Pent2.jpg";
-import Pent3 from "../../Images/Pent3.webp";
-import Pent4 from "../../Images/Pent4.jpg";
+import { PentData } from "../../Data";
 
 export const Pents = () => {
 return(
     <div className={style.Pents_Wrapper}>
-        <Cards 
-          image={Pent1}
-          heading={"Line Pent"}
-          price={"Rs 1550/-"}
-          buttonText={"Buy"}/>
-        <Cards 
-          image={Pent2}
-          heading={"Jeans Cotton"}
-          price={"Rs 1750/-"}
-          buttonText={"Buy"}/>
-        <Cards 
-          image={Pent3}
-          heading={"Jeans Pent"}
-          price={"Rs 1950/-"}
-          buttonText={"Buy"}/>
-        <Cards 
-          image={Pent4}
-          heading={"Trousers"}
-          price={"Rs 1250/-"}
-          buttonText={"Buy"}/>
+      {PentData.map(pent => (
+    <Cards  
+     image={pent.img}
+     heading={pent.heading}
+     price={pent.price}
+     buttonText={pent.buttonText}/>
+    ))}
     </div>
 );
 };
