@@ -9,35 +9,35 @@ return(
     <div className={style.Intro}> 
 <div className={style.Shirts}>
     <h2>Shirts</h2>
-        <li>Addidas</li>
-        <li>Nike</li>
-        <li>Tommy Hilfiger</li>
-        <li>Levis</li>
-        <li>Allen Solly</li>
+        <li>Khaadi</li>
+        <li>Maria B</li>
+        <li>Junaid Jamshed</li>
+        <li>Gul Ahmed</li>
+        <li>Limelight</li>
     </div>
 <div className={style.Pents}>
     <h2>Pents</h2>
-        <li>Levis</li>
-        <li>Calvin Klein</li>
-        <li>Pep Jeans</li>
-        <li>Madewell</li>
-        <li>Bonobose</li>
+        <li>Zara</li>
+        <li>Diesel</li>
+        <li>Kayazar</li>
+        <li>Outfitters</li>
+        <li>Crossroads</li>
     </div>
 <div className={style.Bags}>
     <h2>Bags</h2>
-        <li>Gucci</li>
-        <li>Coach</li>
-        <li>Prada</li>
-        <li>Fendi</li>
-        <li>Hermes</li>
+        <li>Borjan</li>
+        <li>Stylo</li>
+        <li>Totes PK</li>
+        <li>Bagallery</li>
+        <li>Astore</li>
     </div>
 <div className={style.Shoes}>
     <h2>Shoes</h2>
-        <li>Puma</li>
-        <li>Addidas</li>
-        <li>Reebok</li>
-        <li>Sketchers</li>
-        <li>Hush Puppies</li>
+        <li>Service</li>
+        <li>Bata</li>
+        <li>Ndure</li>
+        <li>ECS</li>
+        <li>Metro</li>
     </div> 
 </div>
 </div>
