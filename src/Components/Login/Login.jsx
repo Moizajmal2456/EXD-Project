@@ -21,7 +21,7 @@ return(
          <div className={style.Line}></div>
          </div>
         <button className={style.Button}> <img src="/Images/facebook.svg" alt="facebook icon"/>Continue with Facebook</button>
-        <button className={style.Button}> <img src="/Images/egoogle.svg" alt="google icon"/>Continue with Google</button>
+        <button className={style.Button}> <img src="/Images/google.svg" alt="google icon"/>Continue with Google</button>
         <button className={style.Button}> <img src="/Images/email.svg" alt="email icon"/>Continue with Email</button>
         <div className={style.Register}>
         <h4><u>Don't have an account? Register Now</u></h4>

@@ -9,13 +9,6 @@ import { FilterButton } from "../Filtering/FilterButton";
 export const Shoes = () => {
 return( 
     <div className={style.Shoes_Wrapper}>
-      <div className={style.Filter}>
-        <FilterButton
-        brands={ShoesBrands}
-        variants={ShoesVariant}
-        pricerange={Price}/>
-      </div>
-     <div className={style.Shoes}>
     {ShoesData.map(shoe => (
     <Cards  
      image={shoe.img}
@@ -23,7 +16,6 @@ return(
      price={shoe.price}
      buttonText={shoe.buttonText}/>
     ))}
-    </div>
     </div>
 );
 };
