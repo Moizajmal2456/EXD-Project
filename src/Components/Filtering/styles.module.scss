@@ -1,0 +1,58 @@
+.Fiters_Wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    .BrandFilter {
+        width: 150px; 
+        select {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          background-color: #fff;
+          color: #333;
+          cursor: pointer;
+          font-size: 14px;
+          transition: border-color 0.3s ease;
+          &:hover {
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+    .VariantFilter{
+        width: 150px; 
+        select {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          background-color: #fff;
+          color: #333;
+          cursor: pointer;
+          font-size: 14px;
+          transition: border-color 0.3s ease;
+          &:hover {
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          }
+        }
+    }
+    .PriceFilter{
+        width: 150px; 
+        select {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          background-color: #fff;
+          color: #333;
+          cursor: pointer;
+          font-size: 14px;
+          transition: border-color 0.3s ease;
+          &:hover {
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          }
+        }
+    }
+}

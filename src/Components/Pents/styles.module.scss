@@ -2,7 +2,22 @@
     margin: auto;
     width: 100%;
     display: flex;
-    gap: 20px;
+    flex-direction: column;
     margin-bottom: 50px;
     margin-top: 50px;
+    .Filter{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Pents{
+        margin: auto;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
 }
