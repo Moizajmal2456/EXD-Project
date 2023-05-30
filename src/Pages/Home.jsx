@@ -14,11 +14,11 @@ return(
     <>
     <Navbar/>
     <Hero/>
-    {/* <Products/> */}
-    <Shirts/>
+    <Products/>
+    {/* <Shirts/>
     <Pents/>
     <Bags/>
-    <Shoes/>
+    <Shoes/> */}
     <ServiceList/>
     <Partners/>
     <Footer/>

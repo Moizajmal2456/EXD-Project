@@ -1,7 +1,9 @@
 .Products_Wrapper{
+    justify-content: center;
     margin: auto;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 50px;
     margin-top: 50px;

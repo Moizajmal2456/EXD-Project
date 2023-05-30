@@ -4,6 +4,7 @@ export const AllProductData = [
         heading:"Shirt",
         price:"Rs 1150/-",
         buttonText:"Buy",
+        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
       {
           id:2,
@@ -11,6 +12,7 @@ export const AllProductData = [
           heading:"Shirt",
           price:"Rs 1270/-",
           buttonText:"Buy",
+          text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
       { 
           id:3,
@@ -18,7 +20,7 @@ export const AllProductData = [
           heading:"Shirt",
           price:"Rs 1650/-",
           buttonText:"Buy",
-  
+          text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
       {   
           id:4,
@@ -26,6 +28,7 @@ export const AllProductData = [
           heading:"Shirt",
           price:"Rs 1200/-",
           buttonText:"Buy",
+          text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
       {
         id:5,
@@ -33,6 +36,7 @@ export const AllProductData = [
         heading:"Line Pent",
         price:"Rs 1550/-",
         buttonText:"Buy",
+        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
       {
           id:6,
@@ -40,6 +44,7 @@ export const AllProductData = [
           heading:"Jeans Cotton",
           price:"Rs 1750/-",
           buttonText:"Buy",
+          text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
       {  
           id:7,
@@ -47,6 +52,7 @@ export const AllProductData = [
           heading:"Jeans Pent",
           price:"Rs 1900/-",
           buttonText:"Buy",
+          text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
   
       },
       {
@@ -55,6 +61,7 @@ export const AllProductData = [
           heading:"Trousers",
           price:"Rs 1250/-",
           buttonText:"Buy",
+          text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
     {
       id:9,
@@ -62,6 +69,7 @@ export const AllProductData = [
       heading:"Gents Bag",
       price:"Rs 1550/-",
       buttonText:"Buy",
+      text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     {
         id:10,
@@ -69,6 +77,7 @@ export const AllProductData = [
         heading:"Gents Bag",
         price:"Rs 1570/-",
         buttonText:"Buy",
+        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     { 
         id:11,
@@ -76,6 +85,7 @@ export const AllProductData = [
         heading:"Gents Bag",
         price:"Rs 1200/-",
         buttonText:"Buy",
+        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
 
     },
     {
@@ -84,6 +94,7 @@ export const AllProductData = [
         heading:"Gents Bag",
         price:"Rs 1800/-",
         buttonText:"Buy",
+        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     {
         id:13,
@@ -91,6 +102,7 @@ export const AllProductData = [
         heading:"Lophers",
         price:"Rs 1550/-",
         buttonText:"Buy",
+        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
       {
           id:14,
@@ -98,6 +110,7 @@ export const AllProductData = [
           heading:"Skin Color Shoes",
           price:"Rs 1570/-",
           buttonText:"Buy",
+          text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
       {  
         id:15,
@@ -105,19 +118,12 @@ export const AllProductData = [
           heading:"Leather Shoes",
           price:"Rs 1200/-",
           buttonText:"Buy",
-  
+          text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
-      {
-        id:16,
-          img:"../Images/Shoes4.webp",
-          heading:"Ladies Shoes",
-          price:"Rs 1800/-",
-          buttonText:"Buy",
-      },
-
 ];
 export const ShirtData = [
-    {
+    { 
+        id:1,
         img:"../Images/Shirt1.webp",
         heading:"Shirt",
         price:"Rs 1150/-",
@@ -125,6 +131,7 @@ export const ShirtData = [
         brand: 1,
       },
       {
+          id:2,
           img:"../Images/Shirt2.webp",
           heading:"Shirt",
           price:"Rs 1270/-",
@@ -132,13 +139,15 @@ export const ShirtData = [
            brand: 2,
       },
       { 
-         img :"../Images/Shirt3.jpg",
+          id:3,
+          img :"../Images/Shirt3.jpg",
           heading:"Shirt",
           price:"Rs 1650/-",
           buttonText:"Buy",
           brand: 3,
       },
       {
+          id:4,
           img:"../Images/Shirt4.jpg",
           heading:"Shirt",
           price:"Rs 1200/-",
@@ -148,18 +157,21 @@ export const ShirtData = [
 ];
 export const PentData = [
     {
+        id:1,
         img:"../Images/Pent1.jpg",
         heading:"Line Pent",
         price:"Rs 1550/-",
         buttonText:"Buy",
       },
       {
+        id:2,
           img:"../Images/Pent2.jpg",
           heading:"Jeans Cotton",
           price:"Rs 1750/-",
           buttonText:"Buy",
       },
       { 
+        id:3,
          img :"../Images/Pent3.webp",
           heading:"Jeans Pent",
           price:"Rs 1900/-",
@@ -167,6 +179,7 @@ export const PentData = [
   
       },
       {
+        id:4,
           img:"../Images/Pent4.jpg",
           heading:"Trousers",
           price:"Rs 1250/-",
@@ -175,18 +188,21 @@ export const PentData = [
 ];
 export const BagData = [
     {
+        id:1,
         img:"../Images/BagsPic1.webp",
         heading:"Gents Bag",
         price:"Rs 1550/-",
         buttonText:"Buy",
       },
       {
+        id:2,
           img:"../Images/BagsPic2.jpeg",
           heading:"Gents Bag",
           price:"Rs 1570/-",
           buttonText:"Buy",
       },
       { 
+        id:3,
          img :"../Images/BagsPic3.jpeg",
           heading:"Gents Bag",
           price:"Rs 1200/-",
@@ -194,6 +210,7 @@ export const BagData = [
   
       },
       {
+          id:4,
           img:"../Images/BagsPic4.webp",
           heading:"Gents Bag",
           price:"Rs 1800/-",
@@ -202,18 +219,21 @@ export const BagData = [
 ];
 export const ShoesData = [
     {
+        id:1,
         img:"../Images/Shoes1.webp",
         heading:"Lophers",
         price:"Rs 1550/-",
         buttonText:"Buy",
       },
       {
+        id:2,
           img:"../Images/Shoes2.webp",
           heading:"Skin Color Shoes",
           price:"Rs 1570/-",
           buttonText:"Buy",
       },
       { 
+        id:3,
          img :"../Images/Shoes3.jpg",
           heading:"Leather Shoes",
           price:"Rs 1200/-",
@@ -221,6 +241,7 @@ export const ShoesData = [
   
       },
       {
+        id:4,
           img:"../Images/Shoes4.webp",
           heading:"Ladies Shoes",
           price:"Rs 1800/-",

@@ -5,13 +5,15 @@ import { AllProductData } from "../../Data";
 export const Products = () => {
 return(
     <div className={style.Products_Wrapper}>
-      {AllProductData.map(product => (
+      {AllProductData.map(product => {
+      return( 
     <Cards  
      image={product.img}
      heading={product.heading}
      price={product.price}
-     buttonText={product.buttonText}/>
-    ))}
+     buttonText={product.buttonText}
+     productID={product.id}/>
+      )})}
     </div>
 );
 };
