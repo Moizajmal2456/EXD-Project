@@ -107,25 +107,28 @@ export const ShirtData = [
         heading:"Shirt",
         price:"Rs 1150/-",
         buttonText:"Buy",
+        brand: 1,
       },
       {
           img:"../Images/Shirt2.webp",
           heading:"Shirt",
           price:"Rs 1270/-",
           buttonText:"Buy",
+           brand: 2,
       },
       { 
          img :"../Images/Shirt3.jpg",
           heading:"Shirt",
           price:"Rs 1650/-",
           buttonText:"Buy",
-  
+          brand: 3,
       },
       {
           img:"../Images/Shirt4.jpg",
           heading:"Shirt",
           price:"Rs 1200/-",
           buttonText:"Buy",
+          brand: 4,
       },
 ];
 export const PentData = [

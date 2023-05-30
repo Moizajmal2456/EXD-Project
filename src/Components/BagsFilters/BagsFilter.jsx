@@ -1,4 +1,4 @@
-import { BagsBrands, BagsVariant, Price } from "../../Data";
+import { BagData, BagsBrands, BagsVariant, Price } from "../../Data";
 import { FilterButton } from "../Filtering/FilterButton";
 import style from "./styles.module.scss";
 
@@ -8,7 +8,8 @@ return(
         <FilterButton
         brands={BagsBrands}
         variants={BagsVariant}
-        pricerange={Price}/>
+        pricerange={Price}
+        data={BagData}/>
      </div>
 );
 };

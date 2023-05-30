@@ -46,7 +46,7 @@ return(
         <button>
         <Link to="/login">Login </Link>
         </button>
-        <img src="/Images/Addtocart.png" alt="Add to cart"/>
+        <img src="/Images/Addtocart.jpg" alt="Add to cart"/>
      </div>
     </div>
 );

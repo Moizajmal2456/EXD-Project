@@ -1,4 +1,4 @@
-import { PentsBrands, PentsVariant, Price } from "../../Data";
+import { PentsBrands, PentsVariant, Price, PentData } from "../../Data";
 import { FilterButton } from "../Filtering/FilterButton";
 import style from "./styles.module.scss";
 
@@ -8,7 +8,8 @@ return(
         <FilterButton 
         brands={PentsBrands}
         variants={PentsVariant}
-        pricerange={Price}/>
+        pricerange={Price}
+        data={PentData}/>
      </div>
 );
 };
