@@ -1,6 +1,12 @@
+import { useState } from "react";
 import style from "./styles.module.scss";
 
 export const SignIn = () => {
+    const [userName , setUserName] = useState();
+    const [email , setEmail] = useState();
+    const [mobile , setMobile] = useState();
+    const [password , setPassword] = useState();
+
 return(
 <div className={style.SignIn_Wrapper}>
 <div className={style.Input_Fields}>

@@ -11,6 +11,7 @@ import { PentsPage } from './Pages/PentsPage';
 import { BagsPage } from './Pages/BagsPage';
 import { ShirtsPage } from './Pages/ShirtsPage';
 import { DetailPage } from './Pages/DetailPage';
+import { PrivateRoute } from './Components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -27,7 +28,9 @@ function App() {
       <Route path="/pentspage" element={<PentsPage/>}/>
       <Route path="/bagspage" element={<BagsPage/>}/>
       <Route path="/shoespage" element={<ShoesPage/>}/>
+      <Route path="/detailpage/:id" element={<PrivateRoute/>} >
       <Route path="/detailpage/:id" element={<DetailPage/>}/>
+      </Route>
     </Routes>
     </BrowserRouter>
   </div>
