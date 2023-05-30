@@ -10,6 +10,7 @@ import { ShoesPage } from './Pages/ShoesPage';
 import { PentsPage } from './Pages/PentsPage';
 import { BagsPage } from './Pages/BagsPage';
 import { ShirtsPage } from './Pages/ShirtsPage';
+import { DetailPage } from './Components/Detail/Detail';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Route path="/pentspage" element={<PentsPage/>}/>
       <Route path="/bagspage" element={<BagsPage/>}/>
       <Route path="/shoespage" element={<ShoesPage/>}/>
+      <Route path="/detailpage" element={<DetailPage/>}/>
     </Routes>
     </BrowserRouter>
   </div>

@@ -1,3 +1,4 @@
+import { Products } from "../Components/AllProducts/AllProducts";
 import { Bags } from "../Components/BagsProduct/Bags";
 import { Footer } from "../Components/Footer/Footer";
 import { Hero } from "../Components/HeroSection/HeroSection";
@@ -13,6 +14,7 @@ return(
     <>
     <Navbar/>
     <Hero/>
+    {/* <Products/> */}
     <Shirts/>
     <Pents/>
     <Bags/>

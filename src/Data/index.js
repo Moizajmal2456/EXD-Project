@@ -1,92 +1,106 @@
-export const ProductData = [
-    {
+export const AllProductData = [
+    {   id:1,
         img:"../Images/Shirt1.webp",
         heading:"Shirt",
         price:"Rs 1150/-",
         buttonText:"Buy",
       },
       {
+          id:2,
           img:"../Images/Shirt2.webp",
           heading:"Shirt",
           price:"Rs 1270/-",
           buttonText:"Buy",
       },
       { 
-         img :"../Images/Shirt3.jpg",
+          id:3,
+          img :"../Images/Shirt3.jpg",
           heading:"Shirt",
           price:"Rs 1650/-",
           buttonText:"Buy",
   
       },
-      {
+      {   
+          id:4,
           img:"../Images/Shirt4.jpg",
           heading:"Shirt",
           price:"Rs 1200/-",
           buttonText:"Buy",
       },
       {
+        id:5,
         img:"../Images/Pent1.jpg",
         heading:"Line Pent",
         price:"Rs 1550/-",
         buttonText:"Buy",
       },
       {
+          id:6,
           img:"../Images/Pent2.jpg",
           heading:"Jeans Cotton",
           price:"Rs 1750/-",
           buttonText:"Buy",
       },
-      { 
-         img :"../Images/Pent3.webp",
+      {  
+          id:7,
+          img :"../Images/Pent3.webp",
           heading:"Jeans Pent",
           price:"Rs 1900/-",
           buttonText:"Buy",
   
       },
       {
+          id:8,
           img:"../Images/Pent4.jpg",
           heading:"Trousers",
           price:"Rs 1250/-",
           buttonText:"Buy",
       },
     {
+      id:9,
       img:"../Images/BagsPic1.webp",
       heading:"Gents Bag",
       price:"Rs 1550/-",
       buttonText:"Buy",
     },
     {
-        img:"../Images/BagsPic2.jbeg",
+        id:10,
+        img:"../Images/BagsPic2.jpeg",
         heading:"Gents Bag",
         price:"Rs 1570/-",
         buttonText:"Buy",
     },
     { 
-       img :"../Images/BagsPic3.jpeg",
+        id:11,
+        img :"../Images/BagsPic3.jpeg",
         heading:"Gents Bag",
         price:"Rs 1200/-",
         buttonText:"Buy",
 
     },
     {
+        id:12,
         img:"../Images/BagsPic4.webp",
         heading:"Gents Bag",
         price:"Rs 1800/-",
         buttonText:"Buy",
     },
     {
-        img:"../Images/Soes1.webp",
+        id:13,
+        img:"../Images/Shoes1.webp",
         heading:"Lophers",
         price:"Rs 1550/-",
         buttonText:"Buy",
       },
       {
-          img:"../Images/Shoes2.jbeg",
+          id:14,
+          img:"../Images/Shoes2.webp",
           heading:"Skin Color Shoes",
           price:"Rs 1570/-",
           buttonText:"Buy",
       },
-      { 
+      {  
+        id:15,
          img :"../Images/Shoes3.jpg",
           heading:"Leather Shoes",
           price:"Rs 1200/-",
@@ -94,6 +108,7 @@ export const ProductData = [
   
       },
       {
+        id:16,
           img:"../Images/Shoes4.webp",
           heading:"Ladies Shoes",
           price:"Rs 1800/-",
