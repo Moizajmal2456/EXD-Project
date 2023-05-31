@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HomePage } from './Pages/Home';
 import { LoginPage } from './Pages/Login';
-import { SignInPage } from './Pages/SignIn';
+import { SignUpPage } from './Pages/SignUp';
 import { ForgotPasswordPage } from './Pages/ForgotPassword';
 import { AboutUsPage } from './Pages/AboutUs';
 import { ContactUsPage } from './Pages/ContactUs';
@@ -20,7 +20,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage/>}/>
       <Route path="/login" element={<LoginPage/>}/>
-      <Route path="/signin" element={<SignInPage/>}/>
+      <Route path="/signin" element={<SignUpPage/>}/>
       <Route path="/forgotpassword" element={<ForgotPasswordPage/>}/>
       <Route path="/aboutus" element={<AboutUsPage/>}/>
       <Route path="/contactus" element={<ContactUsPage/>}/>

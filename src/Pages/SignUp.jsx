@@ -1,13 +1,13 @@
 import { Footer } from "../Components/Footer/Footer";
 import { Navbar } from "../Components/Navbar/Navbar";
-import { SignIn } from "../Components/SignIn/SignIn";
+import { SignUp } from "../Components/SignUp/SignUp";
 
 
-export const SignInPage = () => {
+export const SignUpPage = () => {
 return(
     <>
     <Navbar/>
-    <SignIn/>
+    <SignUp/>
     <Footer/>
     </>
 );

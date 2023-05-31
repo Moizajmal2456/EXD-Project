@@ -9,7 +9,7 @@ export const Login = () => {
     const navigate = useNavigate();
     const handleLogin = async ( email , password) => {
       try {
-        const response = await fetch('/signup', {
+        const response = await fetch('/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ return(
         <div className={style.Register}>
         <h4><u>Don't have an account? Register Now</u></h4>
         <Link to="/signin">
-        <button className={style.Button} type="submit" onClick={handleLogin}>Signin</button>
+        <button className={style.Button}>Signin</button>
         </Link>
         </div>
      </div>
