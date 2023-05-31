@@ -51,15 +51,14 @@
         gap: 50px;
         a{
             text-decoration: none;
+            color: black;
         }
         button{
             width: 10%;
+            color: black;
             border-radius: 20%;
             text-decoration: none;
             background-color: khaki;
-            &:hover{
-                border-radius: 40%;
-            }
         }
         img{
             width: 10%;

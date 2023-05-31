@@ -63,7 +63,7 @@ return(
         <div className={style.Register}>
         <h4><u>Don't have an account? Register Now</u></h4>
         <Link to="/signin">
-        <button className={style.Button}>Signin</button>
+        <button className={style.Button}>Signup</button>
         </Link>
         </div>
      </div>

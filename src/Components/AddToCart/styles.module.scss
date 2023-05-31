@@ -1,0 +1,87 @@
+.container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    margin-left: 20px;
+    gap: 10px;
+    .item_section{
+        width: 70%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 30px 10px;
+        // display: flex;
+        .item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            .item_detail{
+                gap: 2px;
+                display: flex;
+                margin-right: 150px;
+                .img_wrap{
+                    width: 50%;
+                    img{
+                       width: 100%;
+                    }
+                }
+                .text_wrap{
+                    width: 50%;
+                    padding: 10px 0;
+                    display: flex;
+                    flex-direction: column;
+                    h3{
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 0.9;
+                    }
+                }
+            }
+            .price_detail{
+                display: flex;
+                flex-direction: column;
+                margin-right: 130px;
+                .Newpri{
+                    color: rgb(223, 17, 34);
+                    font-size: 22px;
+                }
+                .pri{
+                    color: #444;
+                    font-size: 14px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+            }
+            .counter{
+                display: flex;
+                gap: 10px;
+                .countBtn{
+                    border: none;
+                    background-color: #444;
+                    color: #fff;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+    .bill_section{
+        width: 30%;
+        margin-left: 50px;
+        margin-top: 30px;
+        .final_btn{
+            background-color: #fff;
+            color: #056308;
+            border: 2px solid #056308;
+            border-radius: 8px;
+            padding: 20px 40px;
+            font-size: 24px;
+            font-weight: bold;
+            &:hover{
+                background-color: #056308;
+                color: #fff;
+                border: none;
+            }
+        }
+    }
+}

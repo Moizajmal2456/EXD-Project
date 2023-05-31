@@ -10,7 +10,7 @@ return(
          <button className={style.Button}>Checkout</button>
      </div>
      <div className={style.Right_Section}>
-        <img  src="/Images/herosection.jpg" alt="Hero section image" />
+        <img  src="/Images/Shirt4.jpg" alt="Hero section image" />
      </div>
     </div>
 );

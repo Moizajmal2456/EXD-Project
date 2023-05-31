@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./styles.module.scss";
 import { AllProductData } from '../../Data';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 export const Detail = () => {
   
@@ -10,11 +10,9 @@ export const Detail = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.img_block}>
-        <div className={styles.img}>
+        <div className={styles.image}>
           <img src={product.img} alt="Shirt" />
         </div>
-      </div>
       <div className={styles.text_block}>
         <h1>PRINTED BLUE TSHIRT</h1>
         <p>{product.heading}</p>
@@ -33,7 +31,9 @@ export const Detail = () => {
         <button className={styles.countBtn}>-</button>
         </div>
         <div className='text-center d-block mb-3 pb-3'>
+          <Link to="/addtocartpage">
           <button className={styles.btn}>Add To Cart</button>
+          </Link>
         </div>
       </div>
     </div>
