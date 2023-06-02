@@ -6,14 +6,15 @@ import { ShirtData } from "../../Data";
 export const Shirts = () => {
     return (
       <div className={style.Shirts_Wrapper}>
-        {ShirtData.map((shirt) => (
+        {ShirtData.map((shirt) => {
           <Cards
           image={shirt.img}
           heading={shirt.heading}
           price={shirt.price}
           buttonText={shirt.buttonText}
+          productID={shirt.id}
         />
-        ))}
+      })}
       </div>
     );
   };

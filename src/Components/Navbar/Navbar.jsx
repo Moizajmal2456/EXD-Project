@@ -33,7 +33,6 @@ return(
                 <option value="Shoes">Shoes</option>
             </select>
             </div>
-            <li>Blogs</li>
             <li className={styles.Home}>
             <Link to="/contactus">Contact Us</Link>
             </li>

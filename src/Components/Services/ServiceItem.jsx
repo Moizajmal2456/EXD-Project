@@ -28,7 +28,7 @@ const ServiceItem = () => {
                     </span>
                 </div>
                 <div className={styles.card_text}>
-                    <h4>Fast Delivery</h4>
+                    <h4>Reliability</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.</p>
                 </div>
             </div>
@@ -43,7 +43,7 @@ const ServiceItem = () => {
                     </span>
                 </div>
                 <div className={styles.card_text}>
-                    <h4>Fast Delivery</h4>
+                    <h4>Easy Exchange</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.</p>
                 </div>
             </div>
@@ -58,7 +58,7 @@ const ServiceItem = () => {
                     </span>
                 </div>
                 <div className={styles.card_text}>
-                    <h4>Fast Delivery</h4>
+                    <h4>Live Tracking</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.</p>
                 </div>
             </div>
