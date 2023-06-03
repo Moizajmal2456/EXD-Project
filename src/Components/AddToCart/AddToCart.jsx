@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from "./styles.module.scss";
 
 export const AddToCartPage = () => {
+
+  const [count, setCount] = useState(1);
+  const handleIncrement = () =>{
+    setCount(count+1)
+  }
+  const handleDecrement = () =>{
+    setCount(count-1)
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.item_section}>
@@ -22,9 +31,9 @@ export const AddToCartPage = () => {
             <p>50%</p>
           </div>
       <div className={styles.counter}>
-        <button className={styles.countBtn}>+</button>
-        <span>0</span>
-        <button className={styles.countBtn}>-</button>
+        <button className={styles.countBtn}  onClick={handleIncrement}>+</button>
+        <span>{count}</span>
+        <button className={styles.countBtn}  onClick={handleDecrement}>-</button>
       </div>
         </div>
       </div>

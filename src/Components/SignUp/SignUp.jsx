@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import style from "./styles.module.scss";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 export const SignUp = () => {
     const [userName , setUserName] = useState();
@@ -9,41 +10,50 @@ export const SignUp = () => {
     const [password , setPassword] = useState();
 
   const navigate = useNavigate();
-  const handleSignUp = async ({userName , email , mobile , password}) => {
-    try{
-      const response = await fetch('/signup' , {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ userName , email , mobile , password}),
-      });
 
-      if(response.ok){
-        const data = await response.json();
-        localStorage.setItem("access-token" , response.accessToken);
-        setTimeout(() => {
-          navigate("/");
-        } , 3000);
-      }
-      else{
-        const error = await response.text();
-      }
-      }
-      catch (error) {
-        console.log("An error occured" , error);
-      }
-    }
+  const handleSignup = async () => {
+    useEffect(() => {
+      axios
+      .post(`${process.env.REACT_APP_API_URL}/signup`, {
+        userName: userName,
+        email: email,
+        mobileNo: mobile,
+        password: password,
+      })
+      .then((response) => {
+        console.log(response)
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    });
+  }
+
+  const handleNameChange = ( event) => {
+    setUserName(event.target.value);
+  };
+
+  const handleEmailChange = ( event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleMobileChange = ( event) => {
+    setMobile(event.target.value);
+  };
+ 
+  const handlePasswordChange = ( event ) => {
+   setPassword(event.target.value)
+  };
 
 return(
 <div className={style.SignIn_Wrapper}>
 <div className={style.Input_Fields}>
 <h2>Signup to your account</h2>
-<input className={style.Email} type="string" placeholder="UserName"/>
-<input className={style.Email} type="string" placeholder="Email"/>
-<input className={style.Email} type="Number" placeholder="Mobile Number"/>
-<input className={style.Email} type="password" placeholder="Password"/>
-<button className={style.Button} onClick={handleSignUp}>Sign Up</button>
+<input className={style.Email} type="string" placeholder="UserName" onClick={handleNameChange}/>
+<input className={style.Email} type="string" placeholder="Email" onClick={handleEmailChange}/>
+<input className={style.Email} type="Number" placeholder="Mobile Number" onClick={handleMobileChange}/>
+<input className={style.Email} type="password" placeholder="Password" onClick={handlePasswordChange}/>
+<button className={style.Button} onClick={handleSignup} >Sign Up</button>
 </div>
 </div>
 );

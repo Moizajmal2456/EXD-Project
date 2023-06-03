@@ -1,36 +1,38 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import style from "./styles.module.scss";
 import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 export const Login = () => {
     const [email , setEmail] = useState();
     const [password , setPassword] = useState();
 
     const navigate = useNavigate();
-    const handleLogin = async ( email , password) => {
-      try {
-        const response = await fetch('/login', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            "access-token":"dummytoken",
-          },
-          body: JSON.stringify({ email, password }),
-        });
+    // const handleLogin = async ({email , password}) => {
+    //   try {
+    //     const response = await fetch('/login', {
+    //       method: 'POST',
+    //       headers: {
+    //         'Content-Type': 'application/json',
+    //       },
+    //       body: JSON.stringify({ email, password }),
+    //     });
     
-        if (response.ok) {
-          const data = await response.json();
-          setTimeout(() => {
-            navigate("/");
-          }, 3000);
-        } else {
-          const error = await response.text();
-        }
-      } catch (error) {
-        console.error('An error occurred:', error);
-      }
-    };
-    
+    //     if (response.ok) {
+    //       const data = await response.json();
+    //       const accessToken = data.accessToken;
+    //       localStorage.setItem("accesstoken" , accessToken);
+    //       setTimeout(() => {
+    //         navigate("/");
+    //       }, 3000);
+    //     } else {
+    //       const error = await response.text();
+    //     }
+    //   } catch (error) {
+    //     console.error('An error occurred:', error);
+    //   }
+    // };
+
     const handleEmailChange = ( event) => {
       setEmail(event.target.value);
     };

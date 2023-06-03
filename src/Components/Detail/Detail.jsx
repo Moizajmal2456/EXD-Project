@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from "./styles.module.scss";
 import { AllProductData } from '../../Data';
 import { Link, useParams } from 'react-router-dom';
 
 export const Detail = () => {
+
+  const [count, setCount] = useState(1);
+  const handleIncrement = () =>{
+    setCount(count+1)
+  }
+  const handleDecrement = () =>{
+    setCount(count-1)
+  }
   
   const { id } = useParams();
   const product = AllProductData.find((m) => m.id == id);
@@ -26,9 +34,9 @@ export const Detail = () => {
         </p>
         <b>Price{product.price}</b>
         <div className={styles.counter}>
-        <button className={styles.countBtn}>+</button>
-        <span>0</span>
-        <button className={styles.countBtn}>-</button>
+        <button className={styles.countBtn} onClick={handleIncrement}>+</button>
+        <span>{count}</span>
+        <button className={styles.countBtn} onClick={handleDecrement}>-</button>
         </div>
         <div className='text-center d-block mb-3 pb-3'>
           <Link to="/addtocartpage">

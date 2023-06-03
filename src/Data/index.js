@@ -5,6 +5,7 @@ export const AllProductData = [
         heading:"Shirt",
         price:"Rs 1150/-",
         buttonText:"Buy",
+        type:"shirt",
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
       {
@@ -13,6 +14,7 @@ export const AllProductData = [
           heading:"Shirt",
           price:"Rs 1270/-",
           buttonText:"Buy",
+          type:"shirt",
           text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
       { 
@@ -21,6 +23,7 @@ export const AllProductData = [
           heading:"Shirt",
           price:"Rs 1650/-",
           buttonText:"Buy",
+          type:"shirt",
           text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
       {   
@@ -29,6 +32,7 @@ export const AllProductData = [
           heading:"Shirt",
           price:"Rs 1200/-",
           buttonText:"Buy",
+          type:"shirt",
           text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
       {
@@ -37,6 +41,7 @@ export const AllProductData = [
         heading:"Line Pent",
         price:"Rs 1550/-",
         buttonText:"Buy",
+        type:"pent",
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
       {
@@ -45,6 +50,7 @@ export const AllProductData = [
           heading:"Jeans Cotton",
           price:"Rs 1750/-",
           buttonText:"Buy",
+          type:"pent",
           text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
       {  
@@ -53,6 +59,7 @@ export const AllProductData = [
           heading:"Jeans Pent",
           price:"Rs 1900/-",
           buttonText:"Buy",
+          type:"pent",
           text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
   
       },
@@ -62,6 +69,7 @@ export const AllProductData = [
           heading:"Trousers",
           price:"Rs 1250/-",
           buttonText:"Buy",
+          type:"pent",
           text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
     {
@@ -70,6 +78,7 @@ export const AllProductData = [
       heading:"Gents Bag",
       price:"Rs 1550/-",
       buttonText:"Buy",
+      type:"bag",
       text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     {
@@ -78,6 +87,7 @@ export const AllProductData = [
         heading:"Gents Bag",
         price:"Rs 1570/-",
         buttonText:"Buy",
+        type:"bag",
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     { 
@@ -86,6 +96,7 @@ export const AllProductData = [
         heading:"Gents Bag",
         price:"Rs 1200/-",
         buttonText:"Buy",
+        type:"bag",
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
 
     },
@@ -95,6 +106,7 @@ export const AllProductData = [
         heading:"Gents Bag",
         price:"Rs 1800/-",
         buttonText:"Buy",
+        type:"bag",
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     {
@@ -103,6 +115,7 @@ export const AllProductData = [
         heading:"Lophers",
         price:"Rs 1550/-",
         buttonText:"Buy",
+        type:"shoes",
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
       {
@@ -111,6 +124,7 @@ export const AllProductData = [
           heading:"Skin Color Shoes",
           price:"Rs 1570/-",
           buttonText:"Buy",
+          type:"shoes",
           text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
       {  
@@ -119,6 +133,7 @@ export const AllProductData = [
           heading:"Leather Shoes",
           price:"Rs 1200/-",
           buttonText:"Buy",
+          type:"shoes",
           text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
 ];
