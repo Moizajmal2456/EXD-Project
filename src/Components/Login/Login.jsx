@@ -8,30 +8,29 @@ export const Login = () => {
     const [password , setPassword] = useState();
 
     const navigate = useNavigate();
-    // const handleLogin = async ({email , password}) => {
-    //   try {
-    //     const response = await fetch('/login', {
-    //       method: 'POST',
-    //       headers: {
-    //         'Content-Type': 'application/json',
-    //       },
-    //       body: JSON.stringify({ email, password }),
-    //     });
+    const Login = async () => {
+      try {
+        const response = await axios.post('http://localhost:4000/login', {
+        email , password
+        });
     
-    //     if (response.ok) {
-    //       const data = await response.json();
-    //       const accessToken = data.accessToken;
-    //       localStorage.setItem("accesstoken" , accessToken);
-    //       setTimeout(() => {
-    //         navigate("/");
-    //       }, 3000);
-    //     } else {
-    //       const error = await response.text();
-    //     }
-    //   } catch (error) {
-    //     console.error('An error occurred:', error);
-    //   }
-    // };
+        if (response.ok) {
+          const data = await response.json();
+          const accessToken = data.accessToken;
+          localStorage.setItem("accesstoken" , accessToken);
+          setTimeout(() => {
+            navigate("/");
+          }, 3000);
+        } 
+        else {
+          const error = await response.text();
+          console.log(error);
+        }
+      } catch (error) {
+        // console.error('An error occurred:', error);
+        alert(error);
+      }
+    };
 
     const handleEmailChange = ( event) => {
       setEmail(event.target.value);
@@ -48,7 +47,7 @@ return(
         <h4>Welcome back!</h4>
         <input className={style.Email} type="string" required placeholder=" Enter Email" onChange={handleEmailChange}/>
         <input className={style.Email} type="string" required placeholder="Enter Password" on onChange={handlePasswordChange}/>
-        <button className={style.Button} type="submit">Login</button>
+        <button className={style.Button} type="submit" onClick={Login}>Login</button>
         <div className={style.Forgot}>
         <Link to="/forgotpassword">
          <h4>Forgot Password?</h4>

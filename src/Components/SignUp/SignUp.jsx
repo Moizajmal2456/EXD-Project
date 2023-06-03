@@ -6,28 +6,11 @@ import axios from "axios";
 export const SignUp = () => {
     const [userName , setUserName] = useState();
     const [email , setEmail] = useState();
-    const [mobile , setMobile] = useState();
+    const [mobileNo , setMobile] = useState();
     const [password , setPassword] = useState();
+    const [response , setResposne] = useState();
 
   const navigate = useNavigate();
-
-  const handleSignup = async () => {
-    useEffect(() => {
-      axios
-      .post(`${process.env.REACT_APP_API_URL}/signup`, {
-        userName: userName,
-        email: email,
-        mobileNo: mobile,
-        password: password,
-      })
-      .then((response) => {
-        console.log(response)
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-    });
-  }
 
   const handleNameChange = ( event) => {
     setUserName(event.target.value);
@@ -45,6 +28,17 @@ export const SignUp = () => {
    setPassword(event.target.value)
   };
 
+  const signUp = async () => {
+    try {
+      const response = await axios.post('http://localhost:4000/signup', {
+        userName , email , mobileNo , password
+      });
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
 return(
 <div className={style.SignIn_Wrapper}>
 <div className={style.Input_Fields}>
@@ -53,7 +47,7 @@ return(
 <input className={style.Email} type="string" placeholder="Email" onClick={handleEmailChange}/>
 <input className={style.Email} type="Number" placeholder="Mobile Number" onClick={handleMobileChange}/>
 <input className={style.Email} type="password" placeholder="Password" onClick={handlePasswordChange}/>
-<button className={style.Button} onClick={handleSignup} >Sign Up</button>
+<button className={style.Button} onClick={signUp}>Sign Up</button>
 </div>
 </div>
 );
