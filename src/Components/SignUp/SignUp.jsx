@@ -46,7 +46,7 @@ export const SignUp = () => {
    catch(error){
     console.log(error)
    }  
-    }
+}
 
 return(
 <div className={style.SignIn_Wrapper}>

@@ -6,31 +6,8 @@ import axios from "axios";
 export const Login = () => {
     const [email , setEmail] = useState();
     const [password , setPassword] = useState();
-
-    const navigate = useNavigate();
-    const Login = async () => {
-      try {
-        const response = await axios.post('http://localhost:4000/login', {
-        email , password
-        });
     
-        if (response.ok) {
-          const data = await response.json();
-          const accessToken = data.accessToken;
-          localStorage.setItem("accesstoken" , accessToken);
-          setTimeout(() => {
-            navigate("/");
-          }, 3000);
-        } 
-        else {
-          const error = await response.text();
-          console.log(error);
-        }
-      } catch (error) {
-        // console.error('An error occurred:', error);
-        alert(error);
-      }
-    };
+    const navigate = useNavigate();
 
     const handleEmailChange = ( event) => {
       setEmail(event.target.value);
@@ -39,14 +16,29 @@ export const Login = () => {
     const handlePasswordChange = ( event ) => {
      setPassword(event.target.value)
     };
+    
+    const Login = async () => {
+      try {
+        const response = await axios.post('http://localhost:4000/login', {
+        email , password
+        });
+       console.log(response);
+          const accessToken = await response.data.token;
+          localStorage.setItem("accesstoken" , accessToken);
+      } catch (error) {
+        // console.error('An error occurred:', error);
+        alert(error);
+      }
+    };
+
 
 return(
     <div className={style.Signup_Wrapper}>
      <div className={style.Input_Fields}>
         <h2>Login to your account</h2>
         <h4>Welcome back!</h4>
-        <input className={style.Email} type="string" required placeholder=" Enter Email" onChange={handleEmailChange}/>
-        <input className={style.Email} type="string" required placeholder="Enter Password" on onChange={handlePasswordChange}/>
+        <input className={style.Email} type="string" name="email" required placeholder=" Enter Email" onChange={handleEmailChange}/>
+        <input className={style.Email} type="string" name="password" required placeholder="Enter Password" onChange={handlePasswordChange}/>
         <button className={style.Button} type="submit" onClick={Login}>Login</button>
         <div className={style.Forgot}>
         <Link to="/forgotpassword">
