@@ -2,7 +2,7 @@ export const AllProductData = [
     {   
         id:1,
         img:"../Images/Shirt1.webp",
-        heading:"Shirt",
+        heading:"Round Neck TShirt",
         price:"Rs 1150/-",
         buttonText:"Buy",
         type:"shirt",
@@ -11,7 +11,7 @@ export const AllProductData = [
       {
           id:2,
           img:"../Images/Shirt2.webp",
-          heading:"Shirt",
+          heading:" Collar TShirt",
           price:"Rs 1270/-",
           buttonText:"Buy",
           type:"shirt",
@@ -20,7 +20,7 @@ export const AllProductData = [
       { 
           id:3,
           img :"../Images/Shirt3.jpg",
-          heading:"Shirt",
+          heading:"Check Shirt",
           price:"Rs 1650/-",
           buttonText:"Buy",
           type:"shirt",
@@ -29,7 +29,7 @@ export const AllProductData = [
       {   
           id:4,
           img:"../Images/Shirt4.jpg",
-          heading:"Shirt",
+          heading:"Collar TShirt",
           price:"Rs 1200/-",
           buttonText:"Buy",
           type:"shirt",
@@ -84,7 +84,7 @@ export const AllProductData = [
     {
         id:10,
         img:"../Images/BagsPic2.jpeg",
-        heading:"Gents Bag",
+        heading:"Ladies Bag",
         price:"Rs 1570/-",
         buttonText:"Buy",
         type:"bag",
@@ -103,7 +103,7 @@ export const AllProductData = [
     {
         id:12,
         img:"../Images/BagsPic4.webp",
-        heading:"Gents Bag",
+        heading:"Ladies Bag",
         price:"Rs 1800/-",
         buttonText:"Buy",
         type:"bag",

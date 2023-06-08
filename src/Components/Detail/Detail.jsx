@@ -22,8 +22,7 @@ export const Detail = () => {
           <img src={product.img} alt="Shirt" />
         </div>
       <div className={styles.text_block}>
-        <h1>PRINTED BLUE TSHIRT</h1>
-        <p>{product.heading}</p>
+        <h1>{product.heading}</h1>
         <p>{product.text}</p>
         <p className={styles.stars}>
           <i class="fa-solid fa-star"></i>

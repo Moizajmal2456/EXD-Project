@@ -4,11 +4,11 @@ import styles from "./styles.module.scss";
 export const AddToCartPage = () => {
 
   const [count, setCount] = useState(1);
-  const handleIncrement = () =>{
-    setCount(count+1)
+  const handleIncrement = () => {
+    setCount(count + 1)
   }
-  const handleDecrement = () =>{
-    setCount(count-1)
+  const handleDecrement = () => {
+    setCount(count - 1)
   }
 
   return (
