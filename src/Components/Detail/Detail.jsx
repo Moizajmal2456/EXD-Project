@@ -38,7 +38,7 @@ export const Detail = () => {
         <button className={styles.countBtn} onClick={handleDecrement}>-</button>
         </div>
         <div className='text-center d-block mb-3 pb-3'>
-          <Link to="/addtocartpage">
+          <Link to ={`/addtocartpage/${id}`}>
           <button className={styles.btn}>Add To Cart</button>
           </Link>
         </div>

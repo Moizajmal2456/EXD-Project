@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import styles from "./styles.module.scss";
+import { useParams } from 'react-router-dom';
+import { AllProductData } from '../../Data';
 
 export const AddToCartPage = () => {
+
+  const { id } = useParams();
+  const product = AllProductData.find((data) => data.id == id); 
 
   const [count, setCount] = useState(1);
   const handleIncrement = () => {
@@ -17,16 +22,15 @@ export const AddToCartPage = () => {
         <div className={styles.item}>
           <div className={styles.item_detail}>
             <div className={styles.img_wrap}>
-            <img src="/Images/Shirt3.jpg" alt="shirt" />
+            <img src={product.img} alt="shirt" />
             </div>
             <div className={styles.text_wrap}>
-              <h3>PRINTED BLUE TSHIRT</h3>
-              <p>T-Shirt</p>
+              <h3>{product.heading}</h3>
               <p>only 6 item in stock</p>
             </div>
           </div>
           <div className={styles.price_detail}>
-            <h6 className={styles.Newpri}>RS.350.00</h6>
+            <h6 className={styles.Newpri}>{product.price}</h6>
             <del className={styles.pri}>RS.750.00</del>
             <p>50%</p>
           </div>

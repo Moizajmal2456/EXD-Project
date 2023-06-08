@@ -29,7 +29,7 @@ function App() {
       <Route path="/pentspage" element={<PentsPage/>}/>
       <Route path="/bagspage" element={<BagsPage/>}/>
       <Route path="/shoespage" element={<ShoesPage/>}/>
-      <Route path="/addtocartpage" element={<AddCartPage/>}/>
+      <Route path="/addtocartpage/:id" element={<AddCartPage/>}/>
       <Route path="/detailpage/:id" element={<PrivateRoute/>} >
       <Route path="/detailpage/:id" element={<DetailPage/>}/>
       </Route>
