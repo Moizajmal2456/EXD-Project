@@ -1,25 +1,21 @@
 import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
-import { useState } from "react";
 
 export const Navbar = () => {
 
-    const [selectValue , setSelectValue] = useState();
-  
     const handleOptionSelected = (event) => {
-        setSelectValue(event.target.value);
-        // const selectedOption = event.target.value;
-        // if (selectedOption === 'Shirt') {
-        //   window.location.href = "/shirtspage";
-        // } else if (selectedOption === 'Pents') {
-        //     window.location.href = "/pentspage";
-        // } else if (selectedOption === 'Bags') {
-        //     window.location.href = "/bagspage";
-        // } else if (selectedOption === 'Shoes'){
-        //     window.location.href = "/shoespage";
-        // } else {
-        //     window.location.href = "/";
-        // }
+        const productType = event.target.value;
+        if (productType === 'Shirt') {
+            window.location.href =`/selectedproduct/${productType}}`;
+        } else if (productType === 'Pent') {
+            window.location.href =`/selectedproduct/${productType}`;
+        } else if (productType === 'Bag') {
+            window.location.href =`/selectedproduct/${productType}`;
+        } else if (productType === 'Shoe'){
+             window.location.href =`/selectedproduct/${productType}`;
+        } else {
+            window.location.href = "/";
+        }
     }
 return(
     <div className={styles.Navbar_Wrapper}>
@@ -32,11 +28,10 @@ return(
             <select onChange={handleOptionSelected}>
                 <option value="Product">Select Product</option>
                 <option value="Shirt">Shirts</option>
-                <option value="Pents">Pents</option>
-                <option value="Bags">Bags</option>
-                <option value="Shoes">Shoes</option>
+                <option value="Pent">Pents</option>
+                <option value="Bag">Bags</option>
+                <option value="Shoe">Shoes</option>
             </select>
-            <Link to={`/selectedproduct/${selectValue}`}/>
             </div>
             <li className={styles.Home}>
             <Link to="/contactus">Contact Us</Link>
