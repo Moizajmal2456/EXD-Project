@@ -13,6 +13,7 @@ import { ShirtsPage } from './Pages/ShirtsPage';
 import { DetailPage } from './Pages/DetailPage';
 import { PrivateRoute } from './Components/PrivateRoute/PrivateRoute';
 import { AddCartPage } from './Pages/AddToCartPage';
+import { SelectedProduct } from './Pages/SelectedProduct';
 
 function App() {
   return (
@@ -22,16 +23,17 @@ function App() {
       <Route path="/" element={<HomePage/>}/>
       <Route path="/login" element={<LoginPage/>}/>
       <Route path="/signin" element={<SignUpPage/>}/>
-      <Route path="/forgotpassword" element={<ForgotPasswordPage/>}/>
-      <Route path="/aboutus" element={<AboutUsPage/>}/>
-      <Route path="/contactus" element={<ContactUsPage/>}/>
-      <Route path="/shirtspage" element={<ShirtsPage/>}/>
-      <Route path="/pentspage" element={<PentsPage/>}/>
       <Route path="/bagspage" element={<BagsPage/>}/>
+      <Route path="/aboutus" element={<AboutUsPage/>}/>
+      <Route path="/pentspage" element={<PentsPage/>}/>
       <Route path="/shoespage" element={<ShoesPage/>}/>
-      <Route path="/addtocartpage/:id" element={<AddCartPage/>}/>
-      <Route path="/detailpage/:id" element={<PrivateRoute/>} >
+      <Route path="/shirtspage" element={<ShirtsPage/>}/>
+      <Route path="/contactus" element={<ContactUsPage/>}/>
       <Route path="/detailpage/:id" element={<DetailPage/>}/>
+      <Route path="/detailpage/:id" element={<PrivateRoute/>} >
+      <Route path="/addtocartpage/:id" element={<AddCartPage/>}/>
+      <Route path='/selectedproduct/:productType' element={<SelectedProduct/>}/>
+      <Route path="/forgotpassword" element={<ForgotPasswordPage/>}/>
       </Route>
     </Routes>
     </BrowserRouter>

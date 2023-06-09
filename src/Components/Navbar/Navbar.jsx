@@ -1,21 +1,25 @@
 import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
+import { useState } from "react";
 
 export const Navbar = () => {
+
+    const [selectValue , setSelectValue] = useState();
   
     const handleOptionSelected = (event) => {
-        const selectedOption = event.target.value;
-        if (selectedOption === 'Shirt') {
-          window.location.href = "/shirtspage";
-        } else if (selectedOption === 'Pents') {
-            window.location.href = "/pentspage";
-        } else if (selectedOption === 'Bags') {
-            window.location.href = "/bagspage";
-        } else if (selectedOption === 'Shoes'){
-            window.location.href = "/shoespage";
-        } else {
-            window.location.href = "/";
-        }
+        setSelectValue(event.target.value);
+        // const selectedOption = event.target.value;
+        // if (selectedOption === 'Shirt') {
+        //   window.location.href = "/shirtspage";
+        // } else if (selectedOption === 'Pents') {
+        //     window.location.href = "/pentspage";
+        // } else if (selectedOption === 'Bags') {
+        //     window.location.href = "/bagspage";
+        // } else if (selectedOption === 'Shoes'){
+        //     window.location.href = "/shoespage";
+        // } else {
+        //     window.location.href = "/";
+        // }
     }
 return(
     <div className={styles.Navbar_Wrapper}>
@@ -32,6 +36,7 @@ return(
                 <option value="Bags">Bags</option>
                 <option value="Shoes">Shoes</option>
             </select>
+            <Link to={`/selectedproduct/${selectValue}`}/>
             </div>
             <li className={styles.Home}>
             <Link to="/contactus">Contact Us</Link>
