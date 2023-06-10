@@ -13,13 +13,13 @@ export const SelectedProduct = () => {
     return (
       <div className={style.Products_Wrapper}>
         {productData.map((obj) => {
-          <Cards
-          image={obj.img}
-          heading={obj.heading}
-          price={obj.price}
-          buttonText={obj.buttonText}
-          productID={obj.id}
-        />
+          return(<Cards
+            image={obj.img}
+            heading={obj.heading}
+            price={obj.price}
+            buttonText={obj.buttonText}
+            productID={obj.id}
+          />)
         })}
       </div>
     );

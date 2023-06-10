@@ -1,5 +1,4 @@
 import style from "./styles.module.scss";
-import { Shirts } from "../ShirtProduct/Shirts";
 
 export const FilterButton = ({brands, variants, pricerange , data}) => {
 
@@ -7,11 +6,9 @@ export const FilterButton = ({brands, variants, pricerange , data}) => {
         const { value } = event.target;
         if(value === 0) 
         {
-        // <Shirts Data={data}/>
         return ;
         }
         const BrandFilteredProduct = data.filter((m) => m.brand === value);
-        // <Shirts Data={BrandFilteredProduct}/>
         };
 
 return(

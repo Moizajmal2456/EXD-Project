@@ -6,7 +6,7 @@ export const Navbar = () => {
     const handleOptionSelected = (event) => {
         const productType = event.target.value;
         if (productType === 'Shirt') {
-            window.location.href =`/selectedproduct/${productType}}`;
+            window.location.href =`/selectedproduct/${productType}`;
         } else if (productType === 'Pent') {
             window.location.href =`/selectedproduct/${productType}`;
         } else if (productType === 'Bag') {
