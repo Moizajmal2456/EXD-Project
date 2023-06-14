@@ -1,8 +1,10 @@
-.Products_Wrapper{
-    margin: auto;
-    width: 100%;
-    display: flex;
-    gap: 20px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+.Filters_Warpper{
+    .Products_Wrapper{
+        margin: auto;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
 }
