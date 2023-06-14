@@ -137,193 +137,145 @@ export const AllProductData = [
           text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
       },
 ];
-export const ShirtData = [
-    { 
-        id:1,
-        img:"../Images/Shirt1.webp",
-        heading:"Shirt",
-        price:"Rs 1150/-",
-        buttonText:"Buy",
-        brand: 1,
-      },
-      {
-          id:2,
-          img:"../Images/Shirt2.webp",
-          heading:"Shirt",
-          price:"Rs 1270/-",
-          buttonText:"Buy",
-          brand: 2,
-      },
-      { 
-          id:3,
-          img :"../Images/Shirt3.jpg",
-          heading:"Shirt",
-          price:"Rs 1650/-",
-          buttonText:"Buy",
-          brand: 3,
-      },
-      {
-          id:4,
-          img:"../Images/Shirt4.jpg",
-          heading:"Shirt",
-          price:"Rs 1200/-",
-          buttonText:"Buy",
-          brand: 4,
-      },
-];
-export const PentData = [
-    {
-        id:1,
-        img:"../Images/Pent1.jpg",
-        heading:"Line Pent",
-        price:"Rs 1550/-",
-        buttonText:"Buy",
-      },
-      {
-          id:2,
-          img:"../Images/Pent2.jpg",
-          heading:"Jeans Cotton",
-          price:"Rs 1750/-",
-          buttonText:"Buy",
-      },
-      { 
-          id:3,
-          img :"../Images/Pent3.webp",
-          heading:"Jeans Pent",
-          price:"Rs 1900/-",
-          buttonText:"Buy",
-  
-      },
-      {
-        id:4,
-          img:"../Images/Pent4.jpg",
-          heading:"Trousers",
-          price:"Rs 1250/-",
-          buttonText:"Buy",
-      },
-];
-export const BagData = [
-    {
-        id:1,
-        img:"../Images/BagsPic1.webp",
-        heading:"Gents Bag",
-        price:"Rs 1550/-",
-        buttonText:"Buy",
-      },
-      {
-        id:2,
-          img:"../Images/BagsPic2.jpeg",
-          heading:"Gents Bag",
-          price:"Rs 1570/-",
-          buttonText:"Buy",
-      },
-      { 
-        id:3,
-         img :"../Images/BagsPic3.jpeg",
-          heading:"Gents Bag",
-          price:"Rs 1200/-",
-          buttonText:"Buy",
-  
-      },
-      {
-          id:4,
-          img:"../Images/BagsPic4.webp",
-          heading:"Gents Bag",
-          price:"Rs 1800/-",
-          buttonText:"Buy",
-      },
-];
-export const ShoesData = [
-    {
-        id:1,
-        img:"../Images/Shoes1.webp",
-        heading:"Lophers",
-        price:"Rs 1550/-",
-        buttonText:"Buy",
-      },
-      {
-        id:2,
-          img:"../Images/Shoes2.webp",
-          heading:"Skin Color Shoes",
-          price:"Rs 1570/-",
-          buttonText:"Buy",
-      },
-      { 
-        id:3,
-         img :"../Images/Shoes3.jpg",
-          heading:"Leather Shoes",
-          price:"Rs 1200/-",
-          buttonText:"Buy",
-  
-      },
-      {
-        id:4,
-          img:"../Images/Shoes4.webp",
-          heading:"Ladies Shoes",
-          price:"Rs 1800/-",
-          buttonText:"Buy",
-      },
-];
-export const ShirtsBrands = [
-    { id:1, name:"Khaadi" },
-    { id:2, name:"Maari B" },
-    { id:3, name:"Junaid Jamshed" },
-    { id:4, name:"Gul Ahmed" },
-    { id:5, name:"Limelight" },
-];
-export const PentsBrands = [
-    { id:1, name:"Zara" },
-    { id:2, name:"Diesel" },
-    { id:3, name:"Kayazar" },
-    { id:4, name:"Outfitters" },
-    { id:5, name:"Crossroads" },
-];
-export const BagsBrands = [
-    { id:1, name:"Borjan" },
-    { id:2, name:"Stylo" },
-    { id:3, name:"Totes PK" },
-    { id:4, name:"Bagallery" },
-    { id:5, name:"Astore" },
-];
-export const ShoesBrands = [
-    { id:1, name:"Service" },
-    { id:2, name:"Bata" },
-    { id:3, name:"Ndure" },
-    { id:4, name:"ECS" },
-    { id:5, name:"Metro" },
-];
-export const ShirtsVariant = [
-    { id:1, name:"Tshirts" },
-    { id:2, name:"Check Shirts" },
-    { id:3, name:"Dress Shirts" },
-    { id:4, name:"Sleeveless" },
-    { id:5, name:"Round Neck Shirts" },
-];
-export const PentsVariant = [
-    { id:1, name:"Jeans Pents" },
-    { id:2, name:"Dress Pents" },
-    { id:3, name:"Cotton Pents" },
-    { id:4, name:"Trousers" },
-    { id:5, name:"Leggings" },
-];
-export const BagsVariant = [
-    { id:1, name:"College Bags" },
-    { id:2, name:"Laptop Bags" },
-    { id:3, name:"Ladies Bags" },
-    { id:4, name:"Clutchs" },
-    { id:5, name:"Travelling Bags" },
-];
-export const ShoesVariant = [
-    { id:1, name:"Joggers" },
-    { id:2, name:"Sneekers" },
-    { id:3, name:"Leather Shoes" },
-    { id:4, name:"Athletic Shoes" },
-    { id:5, name:"Sandals" },
-];
-export const Price = [
-    { id:1, name:"1000 - 2000"},
-    { id:2, name:"2000 - 3000"},
-    { id:3, name:"3000 - 4000"},
-    { id:4, name:"4000 - 5000"},
-    { id:5, name:"5000 - 6000"},
+export const filterData = [
+{
+    id:1,
+    productType:"shirt",
+    brandName:"Khaadi",
+    variantName:"Tshirts",  
+    priceRange:"1000 - 2000",
+},
+{
+    id:2,
+    productType:"shirt",
+    brandName:"Maria B",
+    variantName:"Check Shirts",  
+    priceRange:"2000 - 3000",
+},
+{
+    id:3,
+    productType:"shirt",
+    brandName:"Junaid Jumshed",
+    variantName:"Dress Shirts",  
+    priceRange:"3000 - 4000",
+},
+{
+    id:4,
+    productType:"shirt",
+    brandName:"Gul Ahmed",
+    variantName:"Sleeveless",  
+    priceRange:"4000 - 5000",
+},
+{
+    id:5,
+    productType:"shirt",
+    brandName:"Lime Light",
+    variantName:"Round Neck Shirt",  
+    priceRange:"5000 - 6000",
+},
+{
+    id:6,
+    productType:"pent",
+    brandName:"Zara",
+    variantName:"Jeans Pent",  
+    priceRange:"1000 - 2000",
+},
+{
+    id:7,
+    productType:"pent",
+    brandName:"Diesel",
+    variantName:"Dress Pent",  
+    priceRange:"2000 - 3000",
+},
+{
+    id:8,
+    productType:"pent",
+    brandName:"Kayazar",
+    variantName:"Cotton Pent",  
+    priceRange:"3000 - 4000",
+},
+{
+    id:9,
+    productType:"pent",
+    brandName:"Outfitters",
+    variantName:"Trousers",  
+    priceRange:"4000 - 5000",
+},
+{
+    id:10,
+    productType:"pent",
+    brandName:"Crossroads",
+    variantName:"Shorts",  
+    priceRange:"5000 - 6000",
+},
+{
+    id:11,
+    productType:"bag",
+    brandName:"Borjan",
+    variantName:"College Bag",  
+    priceRange:"1000 - 2000",
+},
+{
+    id:12,
+    productType:"bag",
+    brandName:"Stylo",
+    variantName:"Laptop Bag",  
+    priceRange:"2000 - 3000",
+},
+{
+    id:13,
+    productType:"bag",
+    brandName:"Totes PK",
+    variantName:"Ladies Bag",  
+    priceRange:"3000 - 4000",
+},
+{
+    id:14,
+    productType:"bag",
+    brandName:"Bagallery",
+    variantName:"Clutchs",  
+    priceRange:"4000 - 5000",
+},
+{
+    id:15,
+    productType:"bag",
+    brandName:"Astore",
+    variantName:"Suit Case",  
+    priceRange:"5000 - 6000",
+},
+{
+    id:16,
+    productType:"shoes",
+    brandName:"Service",
+    variantName:"Joggers",  
+    priceRange:"1000 - 2000",
+},
+{
+    id:17,
+    productType:"shoes",
+    brandName:"Bata",
+    variantName:"Sneekers",  
+    priceRange:"2000 - 3000",
+},
+{
+    id:18,
+    productType:"shoes",
+    brandName:"Ndure",
+    variantName:"Leather Shoes",  
+    priceRange:"3000 - 4000",
+},
+{
+    id:19,
+    productType:"shoes",
+    brandName:"ECS",
+    variantName:"Athletic Shoes",  
+    priceRange:"4000 - 5000",
+},
+{
+    id:20,
+    productType:"shoes",
+    brandName:"Metro",
+    variantName:"Sandals",  
+    priceRange:"5000 - 6000",
+},
 ];
