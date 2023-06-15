@@ -1,6 +1,6 @@
 import style from "./styles.module.scss";
 
-export const FilterButton = ({id , brands, variants, pricerange }) => {
+export const FilterButton = ({brands, variants, pricerange }) => {
 
     const BrandsFilter =  ( event ) => {
         // const { value } = event.target;
@@ -11,23 +11,35 @@ export const FilterButton = ({id , brands, variants, pricerange }) => {
         // const BrandFilteredProduct = data.filter((m) => m.brand === value);
         };
 
-return(
-    <div className={style.Fiters_Wrapper} >
-        <div className={style.BrandFilter}>
-        <select id="brands-sorting" >
-                <option key={id} value={brands}>{brands}</option>
-        </select>
-      </div>
-      <div className={style.VariantFilter}>
-      <select id="variants-sorting">
-                <option key={id} value={variants}>{variants}</option>
-        </select>
-      </div>
-      <div className={style.PriceFilter}>
-       <select id="price-sorting">
-           <option key={id} value={pricerange}>{pricerange}</option>
-     </select>
-     </div>
-    </div>
-);
-};
+        return(
+            <div className={style.Fiters_Wrapper} >
+                <div className={style.BrandFilter}>
+                <select id="brands-sorting">
+                {brands.map((brand) => {
+                    return(
+                        <option key={brand.id} value={brand.id}>{brand.name}</option>
+                    )
+                })}
+                </select>
+              </div>
+              <div className={style.VariantFilter}>
+              <select id="variants-sorting">
+                {variants.map((variant) => {
+                    return(
+                        <option key={variant.id} value={variant.id}>{variant.name}</option>
+                    )
+                })}
+                </select>
+              </div>
+              <div className={style.PriceFilter}>
+               <select id="price-sorting">
+               {pricerange.map((price) => {
+               return(
+                   <option key={price.id} value={price.id}>{price.name}</option>
+               )
+               })}
+             </select>
+           </div>
+            </div>
+        );
+        };

@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./styles.module.scss";
 import { Cards } from "../../Cards/Card/Cards";
-import { AllProductData, filterData} from "../../Data";
+import { AllProductData, BagsBrands, BagsVariant, PentsBrands, PentsVariant, Price, ShirtsBrands, ShirtsVariant, ShoesBrands, ShoesVariant, filterData} from "../../Data";
 import { useParams } from "react-router-dom";
 import { FilterButton } from "../Filtering/FilterButton";
 
@@ -11,20 +11,36 @@ export const SelectedProduct = () => {
   // const filtersData = [...filterData];
   const { productType } = useParams();
   const productData = allProductData.filter((data) => data.productType === productType); 
-  const filtersData = filterData.filter((data) => data.productType === productType);
+  // const filtersData = filterData.filter((data) => data.productType === productType);
+
+  const filtersData = () => {
+  if(productType === "Shoe"){
+   return(<FilterButton brands={ShoesBrands}
+   variants={ShoesVariant}
+   pricerange={Price}/>) 
+  }
+  else if(productType === "Pent"){
+    return(<FilterButton brands={PentsBrands}
+    variants={PentsVariant}
+    pricerange={Price}/>) 
+   }
+   else if(productType === "Bag"){
+    return(<FilterButton brands={BagsBrands}
+    variants={BagsVariant}
+    pricerange={Price}/>) 
+   }
+   else {
+    return(<FilterButton brands={ShirtsBrands}
+    variants={ShirtsVariant}
+    pricerange={Price}/>) 
+   }
+  };
+
   console.log(productData);
     return (
     <div className={style.Filters_Warpper}>
       <div className={style.Filters}>
-        {filtersData.map((obj) => {
-          return(
-            <FilterButton 
-            id={obj.id}
-            brands={obj.brandName}
-            variants={obj.variantName}
-            pricerange={obj.price}/>
-          )
-        })}
+      
       </div>
       <div className={style.Products_Wrapper}>
         {productData.map((obj) => {

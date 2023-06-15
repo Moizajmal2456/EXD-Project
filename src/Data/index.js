@@ -279,3 +279,66 @@ export const filterData = [
     price:"5000 - 6000",
 },
 ];
+export const ShirtsBrands = [
+    { id:1, name:"Khaadi" },
+    { id:2, name:"Maari B" },
+    { id:3, name:"Junaid Jamshed" },
+    { id:4, name:"Gul Ahmed" },
+    { id:5, name:"Limelight" },
+];
+export const PentsBrands = [
+    { id:1, name:"Zara" },
+    { id:2, name:"Diesel" },
+    { id:3, name:"Kayazar" },
+    { id:4, name:"Outfitters" },
+    { id:5, name:"Crossroads" },
+];
+export const BagsBrands = [
+    { id:1, name:"Borjan" },
+    { id:2, name:"Stylo" },
+    { id:3, name:"Totes PK" },
+    { id:4, name:"Bagallery" },
+    { id:5, name:"Astore" },
+];
+export const ShoesBrands = [
+    { id:1, name:"Service" },
+    { id:2, name:"Bata" },
+    { id:3, name:"Ndure" },
+    { id:4, name:"ECS" },
+    { id:5, name:"Metro" },
+];
+export const ShirtsVariant = [
+    { id:1, name:"Tshirts" },
+    { id:2, name:"Check Shirts" },
+    { id:3, name:"Dress Shirts" },
+    { id:4, name:"Sleeveless" },
+    { id:5, name:"Round Neck Shirts" },
+];
+export const PentsVariant = [
+    { id:1, name:"Jeans Pents" },
+    { id:2, name:"Dress Pents" },
+    { id:3, name:"Cotton Pents" },
+    { id:4, name:"Trousers" },
+    { id:5, name:"Leggings" },
+];
+export const BagsVariant = [
+    { id:1, name:"College Bags" },
+    { id:2, name:"Laptop Bags" },
+    { id:3, name:"Ladies Bags" },
+    { id:4, name:"Clutchs" },
+    { id:5, name:"Travelling Bags" },
+];
+export const ShoesVariant = [
+    { id:1, name:"Joggers" },
+    { id:2, name:"Sneekers" },
+    { id:3, name:"Leather Shoes" },
+    { id:4, name:"Athletic Shoes" },
+    { id:5, name:"Sandals" },
+];
+export const Price = [
+    { id:1, name:"1000 - 2000"},
+    { id:2, name:"2000 - 3000"},
+    { id:3, name:"3000 - 4000"},
+    { id:4, name:"4000 - 5000"},
+    { id:5, name:"5000 - 6000"},
+];
