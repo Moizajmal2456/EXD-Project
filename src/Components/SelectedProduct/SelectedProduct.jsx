@@ -15,28 +15,30 @@ export const SelectedProduct = () => {
 
   const filtersData = () => {
   if(productType === "Shoe"){
-   return(<FilterButton brands={ShoesBrands}
-   variants={ShoesVariant}
-   pricerange={Price}/>) 
+  //   return(<FilterButton brands={ShoesBrands}
+  //  variants={ShoesVariant}
+  //  pricerange={Price}/>)
+  console.log(ShoesBrands);
   }
   else if(productType === "Pent"){
-    return(<FilterButton brands={PentsBrands}
-    variants={PentsVariant}
-    pricerange={Price}/>) 
+    // return(<FilterButton brands={PentsBrands}
+    // variants={PentsVariant}
+    // pricerange={Price}/>)
+    // console.log(PentsBrands);
    }
    else if(productType === "Bag"){
-    return(<FilterButton brands={BagsBrands}
-    variants={BagsVariant}
-    pricerange={Price}/>) 
+    // return(<FilterButton brands={BagsBrands}
+    // variants={BagsVariant}
+    // pricerange={Price}/>) 
+    // console.log(BagsBrands);
    }
    else {
-    return(<FilterButton brands={ShirtsBrands}
-    variants={ShirtsVariant}
-    pricerange={Price}/>) 
+    // return(<FilterButton brands={ShirtsBrands}
+    // variants={ShirtsVariant}
+    // pricerange={Price}/>)
+    // console.log(ShoesBrands);
    }
   };
-
-  console.log(productData);
     return (
     <div className={style.Filters_Warpper}>
       <div className={style.Filters}>
@@ -44,7 +46,9 @@ export const SelectedProduct = () => {
       </div>
       <div className={style.Products_Wrapper}>
         {productData.map((obj) => {
-          return(<Cards
+          return(
+          filtersData(),
+          <Cards
             image={obj.img}
             heading={obj.heading}
             price={obj.price}
