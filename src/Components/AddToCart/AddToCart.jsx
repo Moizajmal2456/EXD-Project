@@ -2,18 +2,25 @@ import React, { useState } from 'react';
 import styles from "./styles.module.scss";
 import { useParams } from 'react-router-dom';
 import { AllProductData } from '../../Data';
+import { useDispatch, useSelector } from 'react-redux';
+import { decrement, increment } from '../Counter/counter';
 
 export const AddToCartPage = () => {
+
+  const Count = useSelector((state) => state.counter);
+  const dispatch = useDispatch();
 
   const { id } = useParams();
   const product = AllProductData.find((data) => data.id == id); 
 
   const [count, setCount] = useState(1);
   const handleIncrement = () => {
-    setCount(count + 1)
+    dispatch(increment());
+    // setCount(count + 1)
   }
   const handleDecrement = () => {
-    setCount(count - 1)
+    dispatch(decrement());
+    // setCount(count - 1)
   }
 
   return (
@@ -36,7 +43,7 @@ export const AddToCartPage = () => {
           </div>
       <div className={styles.counter}>
         <button className={styles.countBtn}  onClick={handleIncrement}>+</button>
-        <span>{count}</span>
+        <span>{Count}</span>
         <button className={styles.countBtn}  onClick={handleDecrement}>-</button>
       </div>
         </div>
