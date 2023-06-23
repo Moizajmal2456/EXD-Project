@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./styles.module.scss";
 import { Cards } from "../../Cards/Card/Cards";
-import { AllProductData, BagsBrands, BagsVariant, PentsBrands, PentsVariant, Price, ShirtsBrands, ShirtsVariant, ShoesBrands, ShoesVariant, filterData} from "../../Data";
+import { AllProductData, BagsBrands, BagsVariant, PentsBrands, PentsVariant, Price, ShirtsBrands, ShirtsVariant, ShoesBrands, ShoesVariant} from "../../Data";
 import { useParams } from "react-router-dom";
 import { FilterButton } from "../Filtering/FilterButton";
 

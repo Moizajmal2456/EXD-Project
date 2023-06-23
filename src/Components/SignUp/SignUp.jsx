@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import style from "./styles.module.scss";
-import { redirect, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 export const SignUp = () => {
@@ -8,9 +7,6 @@ export const SignUp = () => {
     const [email , setEmail] = useState();
     const [mobileNo , setMobile] = useState();
     const [password , setPassword] = useState();
-    const [response , setResposne] = useState();
-
-  const navigate = useNavigate();
 
   const handleNameChange = ( event) => {
     setUserName(event.target.value);

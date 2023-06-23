@@ -2,15 +2,22 @@ import React, { useState } from 'react';
 import styles from "./styles.module.scss";
 import { AllProductData } from '../../Data';
 import { Link, useParams } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { decrement, increment } from '../Counter/counter';
 
 export const Detail = () => {
 
+  const Count = useSelector((state) => state.counter);
+  const dispatch = useDispatch();
+
   const [count, setCount] = useState(1);
   const handleIncrement = () =>{
-    setCount(count+1)
+    dispatch(increment());
+    // setCount(count+1)
   }
   const handleDecrement = () =>{
-    setCount(count-1)
+    dispatch(decrement());
+    // setCount(count-1)
   }
   
   const { id } = useParams();
@@ -34,7 +41,7 @@ export const Detail = () => {
         <b>Price{product.price}</b>
         <div className={styles.counter}>
         <button className={styles.countBtn} onClick={handleIncrement}>+</button>
-        <span>{count}</span>
+        <span>{Count}</span>
         <button className={styles.countBtn} onClick={handleDecrement}>-</button>
         </div>
         <div className='text-center d-block mb-3 pb-3'>
