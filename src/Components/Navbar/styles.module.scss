@@ -1,6 +1,8 @@
 .Navbar_Wrapper{
     width: 100%;
     display: flex;
+    top: 0px;
+    position: fixed;
     background-color: khaki;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     .Left_Section{
