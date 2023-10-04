@@ -41,9 +41,9 @@ return(
         <input className={style.Email} type="string" name="password" required placeholder="Enter Password" onChange={handlePasswordChange}/>
         <button className={style.Button} type="submit" onClick={Login}>Login</button>
         <div className={style.Forgot}>
-        <Link to="/forgotpassword">
-         <h4>Forgot Password?</h4>
-        </Link>
+          <Link to="/forgotpassword">
+          <h4>Forgot Password?</h4>
+          </Link>
         </div>
          <div className={style.Or}>
          <div className={style.Line}></div>

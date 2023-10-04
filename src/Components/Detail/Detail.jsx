@@ -40,9 +40,9 @@ export const Detail = () => {
         </p>
         <b>Price{product.price}</b>
         <div className={styles.counter}>
-        <button className={styles.countBtn} onClick={handleIncrement}>+</button>
-        <span>{Count}</span>
-        <button className={styles.countBtn} onClick={handleDecrement}>-</button>
+         <button className={styles.countBtn} onClick={handleIncrement}>+</button>
+         <span>{Count}</span>
+         <button className={styles.countBtn} onClick={handleDecrement}>-</button>
         </div>
         <div className='text-center d-block mb-3 pb-3'>
           <Link to ={`/addtocartpage/${id}`}>

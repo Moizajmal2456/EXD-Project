@@ -18,36 +18,36 @@ export const Navbar = () => {
         }
     }
 return(
-    <div className={styles.Navbar_Wrapper}>
-     <div className={styles.Left_Section}>
+<div className={styles.Navbar_Wrapper}>
+  <div className={styles.Left_Section}>
         <ul>
             <li className={styles.Home}>
             <Link to="/">Home</Link>
             </li>
-            <div className={styles.Select_Wrapper}>
-            <select onChange={handleOptionSelected}>
-                <option value="Product">Select Product</option>
-                <option value="Shirt">Shirts</option>
-                <option value="Pent">Pents</option>
-                <option value="Bag">Bags</option>
-                <option value="Shoe">Shoes</option>
-            </select>
-            </div>
+          <div className={styles.Select_Wrapper}>
+             <select onChange={handleOptionSelected}>
+                 <option value="Product">Select Product</option>
+                 <option value="Shirt">Shirts</option>
+                 <option value="Pent">Pents</option>
+                 <option value="Bag">Bags</option>
+                 <option value="Shoe">Shoes</option>
+             </select>
+          </div>
             <li className={styles.Home}>
-            <Link to="/contactus">Contact Us</Link>
+             <Link to="/contactus">Contact Us</Link>
             </li>
             <li className={styles.Home}>
-            <Link to="/aboutus">About Us</Link>
+             <Link to="/aboutus">About Us</Link>
             </li>
         </ul>
-     </div>
-     <div className={styles.Right_Section}>
-        <button>
+  </div>
+  <div className={styles.Right_Section}>
+      <button>
         <Link to="/login">Login </Link>
-        </button>
+      </button>
         {/* <i className="fa-solid fa-cart-shopping"></i> */}
         <img src="/Images/Addtocart.jpg" alt="Add to cart"/>
-     </div>
-    </div>
+  </div>
+</div>
 );
 };

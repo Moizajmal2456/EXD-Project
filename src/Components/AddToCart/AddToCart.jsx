@@ -29,7 +29,7 @@ export const AddToCartPage = () => {
         <div className={styles.item}>
           <div className={styles.item_detail}>
             <div className={styles.img_wrap}>
-            <img src={product.img} alt="shirt" />
+             <img src={product.img} alt="shirt" />
             </div>
             <div className={styles.text_wrap}>
               <h3>{product.heading}</h3>
@@ -41,11 +41,11 @@ export const AddToCartPage = () => {
             <del className={styles.pri}>RS.750.00</del>
             <p>50%</p>
           </div>
-      <div className={styles.counter}>
-        <button className={styles.countBtn}  onClick={handleIncrement}>+</button>
-        <span>{Count}</span>
-        <button className={styles.countBtn}  onClick={handleDecrement}>-</button>
-      </div>
+         <div className={styles.counter}>
+           <button className={styles.countBtn}  onClick={handleIncrement}>+</button>
+           <span>{Count}</span>
+           <button className={styles.countBtn}  onClick={handleDecrement}>-</button>
+         </div>
         </div>
       </div>
       <div className={styles.bill_section}>
