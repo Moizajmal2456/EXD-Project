@@ -45,8 +45,8 @@ return(
       <button>
         <Link to="/login">Login </Link>
       </button>
-        {/* <i className="fa-solid fa-cart-shopping"></i> */}
-        <img src="/Images/Addtocart.jpg" alt="Add to cart"/>
+        <i className="fa-solid fa-cart-shopping"></i>
+        {/* <img src="/Images/Addtocart.jpg" alt="Add to cart"/> */}
   </div>
 </div>
 );

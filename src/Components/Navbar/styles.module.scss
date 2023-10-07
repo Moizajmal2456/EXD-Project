@@ -46,19 +46,26 @@
         display: flex;
         font-size: larger;
         justify-content: center;
+        align-items: center;
         gap: 50px;
         a{
             text-decoration: none;
             color: black;
         }
+        i{
+            font-size: 40px;
+            cursor: pointer;
+        }
         button{
-            width: 10%;
+            width: 15%;
+            height: 40%;
             color: black;
             margin-top: 8px;
             margin-bottom: 8px;
-            border-radius: 20%;
+            border-radius: 5px;
             text-decoration: none;
             background-color: khaki;
+            cursor: pointer;
         }
         img{
             width: 10%;
