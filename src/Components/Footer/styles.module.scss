@@ -1,3 +1,4 @@
+@media (max-width: 450px) {
 .Footer_Wrapper{
       width: 100%;
       display: flex;
@@ -29,4 +30,75 @@
         background-color: #F2F2F2;
         text-align: center;
     }
+}
+}
+
+@media(min-width: 451px) and (max-width: 768px){
+    .Footer_Wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .Links{ 
+          width: 100%;
+          display: flex;
+          background-color: grey;
+          justify-content: space-around;
+          .About{
+              display: flex;
+          flex-direction: column;
+      }
+      .Contact_Us{
+          display: flex;
+          flex-direction: column;
+      }
+      .Follow{
+          display: flex;
+          flex-direction: column;
+          .Images{
+              display: flex;
+              gap: 10px;
+          }
+      }
+  }
+      .Terms{
+          margin-top: 50px;
+          background-color: #F2F2F2;
+          text-align: center;
+      }
+  }
+}
+
+@media(min-width: 769px) and (max-width: 2560px){
+    .Footer_Wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .Links{ 
+          width: 100%;
+          display: flex;
+          background-color: grey;
+          justify-content: space-around;
+          .About{
+              display: flex;
+          flex-direction: column;
+      }
+      .Contact_Us{
+          display: flex;
+          flex-direction: column;
+      }
+      .Follow{
+          display: flex;
+          flex-direction: column;
+          .Images{
+              display: flex;
+              gap: 10px;
+          }
+      }
+  }
+      .Terms{
+          margin-top: 50px;
+          background-color: #F2F2F2;
+          text-align: center;
+      }
+  }
 }
