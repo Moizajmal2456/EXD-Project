@@ -1,22 +1,23 @@
 @media (max-width: 450px) { 
 .Navbar_Wrapper{
+    top: 0px;
     width: 100%;
     display: flex;
-    top: 0px;
     position: fixed;
     background-color: khaki;
     .Left_Section{
-        width: 60%;
-        gap: 40%;
+        width: 50%;
+        gap: 20%;
         display: flex;
-        font-weight: 500;
+        font-size: 9px;
+        font-weight: bold;
         list-style-type: none;
         ul{
             display: flex;
-            gap: 5px;
+            gap: 8px;
         }
         li{
-            margin-right: 6px;
+            // margin-right: 6px;
             display: inline-block;
         }
         a {
@@ -39,31 +40,31 @@
                   cursor: pointer;
                   font-size: 10px;
                   font-weight: bold;
-                  border-radius: 4px;
                   background: transparent;
                 }
               }
         }
     .Right_Section{
-        width: 40%;
+        gap: 10px;
+        width: 50%;
         display: flex;
         font-size: larger;
-        justify-content: center;
+        margin-left: 15px;
         align-items: center;
-        gap: 30px;
         a{
             text-decoration: none;
             color: black;
         }
         i{
-            font-size: 20px;
+            font-size: 15px;
             cursor: pointer;
         }
         button{
-            width: 15%;
+            width: 20%;
             height: 40%;
             color: black;
             margin-top: 8px;
+            font-size: 10px;
             margin-bottom: 8px;
             border-radius: 5px;
             text-decoration: none;
@@ -118,7 +119,6 @@
                       cursor: pointer;
                       font-size: 14px;
                       font-weight: bold;
-                      border-radius: 4px;
                       background: transparent;
                     }
                   }
@@ -200,7 +200,6 @@
                       cursor: pointer;
                       font-size: 14px;
                       font-weight: bold;
-                      border-radius: 4px;
                       background: transparent;
                     }
                   }

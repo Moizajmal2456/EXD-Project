@@ -12,7 +12,7 @@ return(
     <Hero/>
     <Products/>
     <ServiceList/>
-    <Partnclearers/>
+    <Partners/>
     <Footer/>
     </>
 );
