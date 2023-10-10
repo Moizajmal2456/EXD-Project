@@ -6,7 +6,7 @@
     position: fixed;
     background-color: khaki;
     .Left_Section{
-        width: 50%;
+        width: 55%;
         gap: 20%;
         display: flex;
         font-size: 9px;
@@ -14,7 +14,7 @@
         list-style-type: none;
         ul{
             display: flex;
-            gap: 8px;
+            gap: 5px;
         }
         li{
             // margin-right: 6px;
@@ -46,7 +46,7 @@
         }
     .Right_Section{
         gap: 10px;
-        width: 50%;
+        width: 45%;
         display: flex;
         font-size: larger;
         margin-left: 15px;

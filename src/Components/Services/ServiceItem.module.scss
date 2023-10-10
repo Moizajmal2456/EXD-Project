@@ -1,8 +1,8 @@
 .card_col{
     width: 25%;
     .card{
-        display: flex;
-        position: relative;
+    display: flex;
+    position: relative;
     width: 100%;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -17,13 +17,13 @@
                 fill: #c19a83;
                 color: #c19a83;
                 border-color: #c19a83;
-                font-size: 30px;
+                font-size: 20px;
             }
         }
         .card_text{
             h4{
                 margin-bottom: 10px;
-                font-size: 1.4666666666667rem;
+                font-size: 14px;
                 line-height: 1.2em;
                 font-weight: 400;
                 font-family: 'Oswald',sans-serif;
@@ -32,7 +32,7 @@
             p{
                 color: #54595F;
                 border: 0;
-                font-size: 100%;
+                font-size: 15px;
                 font-style: inherit;
                 font-weight: inherit;
                 outline: 0;

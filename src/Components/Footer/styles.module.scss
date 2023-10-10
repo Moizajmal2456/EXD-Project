@@ -9,19 +9,29 @@
         background-color: grey;
         justify-content: space-around;
         .About{
-            display: flex;
+            width: 20%;
+        display: flex;
+        font-size: 15px;
         flex-direction: column;
     }
     .Contact_Us{
         display: flex;
+        font-size: 15px;
         flex-direction: column;
     }
     .Follow{
+        width: 40%;
         display: flex;
         flex-direction: column;
+        h3{
+            font-size: 15px;
+        }
         .Images{
             display: flex;
-            gap: 10px;
+            gap: 5px;
+            img{
+                width: 15%;
+            }
         }
     }
 }
