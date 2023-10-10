@@ -24,6 +24,12 @@ return(
             <li className={styles.Home}>
             <Link to="/">Home</Link>
             </li>
+            <li className={styles.Home}>
+             <Link to="/contactus">Contact Us</Link>
+            </li>
+            <li className={styles.Home}>
+             <Link to="/aboutus">About Us</Link>
+            </li>
           <div className={styles.Select_Wrapper}>
              <select onChange={handleOptionSelected}>
                  <option value="Product">Select Product</option>
@@ -33,12 +39,6 @@ return(
                  <option value="Shoe">Shoes</option>
              </select>
           </div>
-            <li className={styles.Home}>
-             <Link to="/contactus">Contact Us</Link>
-            </li>
-            <li className={styles.Home}>
-             <Link to="/aboutus">About Us</Link>
-            </li>
         </ul>
   </div>
   <div className={styles.Right_Section}>

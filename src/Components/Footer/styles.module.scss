@@ -8,21 +8,28 @@
         display: flex;
         background-color: grey;
         justify-content: space-around;
+        ul{
+        padding-left: 0px;
+        }
         .About{
             width: 20%;
-        display: flex;
-        font-size: 15px;
-        flex-direction: column;
+            display: flex;
+            font-size: 15px;
+            flex-direction: column;
+            left: 0px;
     }
     .Contact_Us{
         display: flex;
         font-size: 15px;
         flex-direction: column;
+        align-items: center;
+        padding-left: 0%;
     }
     .Follow{
         width: 40%;
         display: flex;
         flex-direction: column;
+        padding-left: 20px;
         h3{
             font-size: 15px;
         }

@@ -12,7 +12,7 @@ return(
         <ol>Career</ol>
         <ol>Gurus</ol>
     </ul>
-    </div>
+  </div>
 <div className={style.Contact_Us}>
     <ul>
         <ol><b>Contact Us</b></ol>
