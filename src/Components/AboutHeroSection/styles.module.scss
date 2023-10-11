@@ -1,3 +1,4 @@
+@media (max-width: 450px) { 
 .about_header{
     margin-top: 80px;
     display: flex;
@@ -10,14 +11,90 @@
         padding-right: 15px;
         min-height: 1px;
         img{
-            width: 500px;
-            // max-width: 100%;
+            max-width: 200px;
             height: auto;
             vertical-align: middle;
             border: 0;
             object-fit:fill;
             border-radius: 10px;
 
+        }
+    }
+    .header_text_section{
+        h2{
+            font-size: 16px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+}
+}
+
+@media(min-width: 451px) and (max-width: 768px){
+    .about_header{
+        margin-top: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        .header_image{
+            width: 50.0%;
+            padding-left: 15px;
+            padding-right: 15px;
+            min-height: 1px;
+            img{
+                width: 500px;
+                // max-width: 100%;
+                height: auto;
+                vertical-align: middle;
+                border: 0;
+                object-fit:fill;
+                border-radius: 10px;
+    
+            }
+        }
+        .header_text_section{
+            h2{
+                font-size: 16px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media(min-width: 769px) and (max-width: 2560px){
+    .about_header{
+        margin-top: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        .header_image{
+            width: 50.0%;
+            padding-left: 15px;
+            padding-right: 15px;
+            min-height: 1px;
+            img{
+                width: 500px;
+                // max-width: 100%;
+                height: auto;
+                vertical-align: middle;
+                border: 0;
+                object-fit:fill;
+                border-radius: 10px;
+    
+            }
+        }
+        .header_text_section{
+            h2{
+                font-size: 16px;
+            }
+            p{
+                font-size: 14px;
+            }
         }
     }
 }

@@ -6,7 +6,6 @@ const AboutServiceItem = () => {
     <div className={styles.card_container}>
       <div className={styles.card}>
         <div className={styles.card_icon_section}>
-
         </div>
         <div className={styles.card_text_section}>
           <h4 className={styles.text}>Best Prices & Offers</h4>
@@ -18,7 +17,6 @@ const AboutServiceItem = () => {
     <div className={styles.card_container}>
       <div className={styles.card}>
         <div className={styles.card_icon_section}>
-
         </div>
         <div className={styles.card_text_section}>
           <h4 className={styles.text}>Wide Assortment</h4>
@@ -30,7 +28,6 @@ const AboutServiceItem = () => {
     <div className={styles.card_container}>
       <div className={styles.card}>
         <div className={styles.card_icon_section}>
-
         </div>
         <div className={styles.card_text_section}>
           <h4 className={styles.text}>Free Delivery</h4>
@@ -42,7 +39,6 @@ const AboutServiceItem = () => {
     <div className={styles.card_container}>
       <div className={styles.card}>
         <div className={styles.card_icon_section}>
-
         </div>
         <div className={styles.card_text_section}>
           <h4 className={styles.text}>Easy Returns</h4>
@@ -54,7 +50,6 @@ const AboutServiceItem = () => {
     <div className={styles.card_container}>
       <div className={styles.card}>
         <div className={styles.card_icon_section}>
-
         </div>
         <div className={styles.card_text_section}>
           <h4 className={styles.text}>100% Satisfaction</h4>
@@ -66,7 +61,6 @@ const AboutServiceItem = () => {
     <div className={styles.card_container}>
       <div className={styles.card}>
         <div className={styles.card_icon_section}>
-
         </div>
         <div className={styles.card_text_section}>
           <h4 className={styles.text}>Great Daily Deal</h4>
@@ -75,7 +69,6 @@ const AboutServiceItem = () => {
         </div>
       </div>
     </div>
-
     </>
   )
 }

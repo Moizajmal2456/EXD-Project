@@ -1,28 +1,91 @@
-.services_container{
-    margin-top: 40px;
-
-    .text_heading{
-        margin-bottom: 2rem;
-        text-align: center;
-        h2{
-            font-size: 40px;
-            font-weight: bolder;
-            letter-spacing: .05rem;
-            margin: unset;
-            font-family:'Courier New', Courier, monospace;
-         }
-
-        }
-    .services_section{
-        .services_cards{
-            margin: 0 -15px;
-            min-height: 1px;
-            display: flex;
-            row-gap: 20px;
-            flex-wrap: wrap;
-            padding: 0;
-            list-style: none;
+@media (max-width: 450px) {
+    .services_container{
+        margin-top: 40px;
+        .text_heading{
+            margin-bottom: 2rem;
             text-align: center;
+            h2{
+                font-size: 20px;
+                font-weight: bolder;
+                letter-spacing: .05rem;
+                margin: unset;
+                font-family:'Courier New', Courier, monospace;
+             }
+             img{
+                width: 40%;
+             }
+            }
+        .services_section{
+            .services_cards{
+                margin: 0 -15px;
+                min-height: 1px;
+                display: flex;
+                row-gap: 20px;
+                flex-wrap: wrap;
+                padding: 0;
+                list-style: none;
+                text-align: center;
+            }
+        }
+    }
+ }
+
+@media(min-width: 451px) and (max-width: 768px) { 
+    .services_container{
+        margin-top: 40px;
+        .text_heading{
+            margin-bottom: 2rem;
+            text-align: center;
+            h2{
+                font-size: 40px;
+                font-weight: bolder;
+                letter-spacing: .05rem;
+                margin: unset;
+                font-family:'Courier New', Courier, monospace;
+             }
+    
+            }
+        .services_section{
+            .services_cards{
+                margin: 0 -15px;
+                min-height: 1px;
+                display: flex;
+                row-gap: 20px;
+                flex-wrap: wrap;
+                padding: 0;
+                list-style: none;
+                text-align: center;
+            }
         }
     }
 }
+
+@media(min-width: 769px) and (max-width: 2560px) {
+    .services_container{
+        margin-top: 40px;
+        .text_heading{
+            margin-bottom: 2rem;
+            text-align: center;
+            h2{
+                font-size: 40px;
+                font-weight: bolder;
+                letter-spacing: .05rem;
+                margin: unset;
+                font-family:'Courier New', Courier, monospace;
+             }
+    
+            }
+        .services_section{
+            .services_cards{
+                margin: 0 -15px;
+                min-height: 1px;
+                display: flex;
+                row-gap: 20px;
+                flex-wrap: wrap;
+                padding: 0;
+                list-style: none;
+                text-align: center;
+            }
+        }
+    }
+ }
