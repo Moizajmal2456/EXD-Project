@@ -13,14 +13,11 @@ export const AddToCartPage = () => {
   const { id } = useParams();
   const product = AllProductData.find((data) => data.id == id); 
 
-  // const [count, setCount] = useState(1);
   const handleIncrement = () => {
     dispatch(increment());
-    // setCount(count + 1)
   }
   const handleDecrement = () => {
     dispatch(decrement());
-    // setCount(count - 1)
   }
 
   return (

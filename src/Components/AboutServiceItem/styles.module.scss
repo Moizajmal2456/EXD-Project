@@ -1,9 +1,9 @@
 @media (max-width: 450px) { 
     .card_container{
+        width: 30%;
+        min-height: 1px;
         padding-left: 15px;
         padding-right: 15px;
-        min-height: 1px;
-        width: 30%;
         margin-bottom: 50px;
         .card{
             padding: 5rem 3rem;
@@ -16,19 +16,19 @@
                 .text{
                     margin: 0;
                     font-size: 24px;
-                    padding-bottom: 26px;
                     font-weight: 700;
+                    padding-bottom: 26px;
     
                 }
                 .sub_text{
-                    margin-bottom: 2.7rem;
-                    line-height: 1.5;
                     font-size: 1rem;
+                    line-height: 1.5;
                     text-align: justify;
+                    margin-bottom: 2.7rem;
                 }
                 span{
-                    color: #3bb77e;
                     font-size: 1rem;
+                    color: #3bb77e;
                 }
             }
     
@@ -37,10 +37,10 @@
 }
 @media(min-width: 451px) and (max-width: 768px) { 
     .card_container{
+        width: 30%;
+        min-height: 1px;
         padding-left: 15px;
         padding-right: 15px;
-        min-height: 1px;
-        width: 30%;
         margin-bottom: 50px;
         .card{
             padding: 5rem 3rem;
@@ -53,19 +53,19 @@
                 .text{
                     margin: 0;
                     font-size: 24px;
-                    padding-bottom: 26px;
                     font-weight: 700;
+                    padding-bottom: 26px;
     
                 }
                 .sub_text{
-                    margin-bottom: 2.7rem;
-                    line-height: 1.5;
                     font-size: 1rem;
+                    line-height: 1.5;
                     text-align: justify;
+                    margin-bottom: 2.7rem;
                 }
                 span{
-                    color: #3bb77e;
                     font-size: 1rem;
+                    color: #3bb77e;
                 }
             }
     
@@ -74,10 +74,10 @@
 }
 @media(min-width: 769px) and (max-width: 2560px) {
     .card_container{
+        width: 30%;
+        min-height: 1px;
         padding-left: 15px;
         padding-right: 15px;
-        min-height: 1px;
-        width: 30%;
         margin-bottom: 50px;
         .card{
             padding: 5rem 3rem;
@@ -90,15 +90,15 @@
                 .text{
                     margin: 0;
                     font-size: 24px;
-                    padding-bottom: 26px;
                     font-weight: 700;
+                    padding-bottom: 26px;
     
                 }
                 .sub_text{
-                    margin-bottom: 2.7rem;
-                    line-height: 1.5;
                     font-size: 1rem;
+                    line-height: 1.5;
                     text-align: justify;
+                    margin-bottom: 2.7rem;
                 }
                 span{
                     color: #3bb77e;

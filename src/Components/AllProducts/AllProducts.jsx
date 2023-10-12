@@ -8,15 +8,13 @@ return(
     {AllProductData.map(product => {
     return( 
      <Cards  
-     image={product.img}
-     heading={product.heading}
-     price={product.price}
-     buttonText={product.buttonText}
-     productID={product.id}/>
-      )
-     }
-    )
-   }
+       image={product.img}
+       heading={product.heading}
+       price={product.price}
+       buttonText={product.buttonText}
+       productID={product.id}
+      />
+    )})}
  </div>
 );
 };
