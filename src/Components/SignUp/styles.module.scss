@@ -1,4 +1,58 @@
-.SignIn_Wrapper{
+@media (max-width: 450px) {
+  .SignIn_Wrapper{
+    width: 60%;
+    margin:auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    &:hover{
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     }
+    .Input_Fields{
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        h2{
+          font-size: 16px;
+        }
+    .Email{
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        color: #333;
+        width: 90%;
+        border: 1px solid #ccc;
+      }
+      .Email:focus{
+        outline: none;
+        border-color: blue;
+        box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+        &:hover{
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+      }
+      .Button{
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        color: #333;
+        cursor: pointer;
+        border: 1px solid #ccc;
+      }
+      .Button:hover{
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+    }
+}
+}
+
+@media(min-width: 451px) and (max-width: 768px) { 
+  .SignIn_Wrapper{
     width: 30%;
     margin:auto;
     margin-top: 100px;
@@ -44,4 +98,55 @@
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
       }
     }
+}
+}
+
+@media(min-width: 769px) and (max-width: 2560px) {
+  .SignIn_Wrapper{
+    width: 30%;
+    margin:auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    &:hover{
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     }
+    .Input_Fields{
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+    .Email{
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #333;
+        width: 93%;
+        border: 1px solid #ccc;
+      }
+      .Email:focus{
+        outline: none;
+        border-color: blue;
+        box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+        &:hover{
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+      }
+      .Button{
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #333;
+        cursor: pointer;
+        border: 1px solid #ccc;
+      }
+      .Button:hover{
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+    }
+}
 }
