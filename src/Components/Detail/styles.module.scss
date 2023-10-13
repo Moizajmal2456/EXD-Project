@@ -1,15 +1,14 @@
 .container{
-    width: 100%;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    display: flex;
     gap: 40px;
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
     margin-left: 40px;
-    // align-items: center;
+    margin-bottom: 50px;
     .image{
       width: 50%;
         img{
-            width: 100%;
+         width: 100%;
         }
     }
     .text_block{
@@ -17,9 +16,9 @@
         padding-right: 30px;
         .stars{
             i{
-               font-size: 20px;
-               margin-right: 2px;
-               color:#f2ea0d;
+              font-size: 20px;
+              color:#f2ea0d;
+              margin-right: 2px;
 
             }
         }
@@ -27,25 +26,25 @@
             color: #444444;
         }
         .counter{
+            gap: 10px;
+            display: flex;
             margin-top: 10px;
             margin-bottom: 30px;
-            display: flex;
-            gap: 10px;
             .countBtn{
                 border: none;
-                background-color: #444444;
                 color: #fff;
                 font-size: 18px;
                 padding: 2px 10px;
+                background-color: #444444;
             }
         }
         .btn{
+            color: #333;
+            cursor: pointer;
+            font-size: 16px;
             margin-top: 10px;
             padding: 10px 20px;
             border-radius: 5px;
-            font-size: 16px;
-            color: #333;
-            cursor: pointer;
             border: 1px solid #ccc;
         }
         .btn:hover{

@@ -13,11 +13,9 @@ export const Detail = () => {
   const [count, setCount] = useState(1);
   const handleIncrement = () =>{
     dispatch(increment());
-    // setCount(count+1)
   }
   const handleDecrement = () =>{
     dispatch(decrement());
-    // setCount(count-1)
   }
   
   const { id } = useParams();
@@ -25,9 +23,9 @@ export const Detail = () => {
 
   return (
     <div className={styles.container}>
-        <div className={styles.image}>
-          <img src={product.img} alt="Shirt" />
-        </div>
+      <div className={styles.image}>
+        <img src={product.img} alt="Shirt" />
+      </div>
       <div className={styles.text_block}>
         <h1>{product.heading}</h1>
         <p>{product.text}</p>
