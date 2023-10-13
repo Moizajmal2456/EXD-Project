@@ -34,23 +34,22 @@ export const SelectedProduct = () => {
     pricerange={Price}/></div>)
    }
   };
-    return (
-    <div className={style.Filters_Warpper}>
-      <div className={style.Filters}>
-      {filtersData()}
-      </div>
-      <div className={style.Products_Wrapper}>
-        {productData.map((obj) => {
-          return(
-          <Cards
-            image={obj.img}
-            heading={obj.heading}
-            price={obj.price}
-            buttonText={obj.buttonText}
-            productID={obj.id}
-            />)
-          })}
-      </div>
-    </div>
-    );
-  };
+return (
+<div className={style.Filters_Warpper}>
+  <div className={style.Filters}>
+    {filtersData()}
+  </div>
+  <div className={style.Products_Wrapper}>
+    {productData.map((obj) => {
+    return(
+    <Cards
+      image={obj.img}
+      heading={obj.heading}
+      price={obj.price}
+      buttonText={obj.buttonText}
+      productID={obj.id}
+    />) })}
+  </div>
+</div>
+);
+};

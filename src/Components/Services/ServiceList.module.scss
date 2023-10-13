@@ -3,29 +3,29 @@
     padding: 50px 0;
     .container {
         display: flex;
-        margin-right: auto;
         margin-left: auto;
+        margin-right: auto;
         position: relative;
         max-width: 1340px;
         .services_section {
-            position: relative;
-            min-height: 1px;
-            display: flex;
             width: 100%;
+            display: flex;
+            min-height: 1px;
+            position: relative;
             .services {
-                position: relative;
                 width: 100%;
                 flex-wrap: wrap;
+                position: relative;
                 align-content: flex-start;
                 .text_top {
                     margin-bottom: 10px;
                     .services_text_top {
+                        font-size: 15px;
+                        font-weight: 400;
+                        text-align: center;
                         color: #00000061;
                         letter-spacing: 2px;
-                        font-size: 15px;
                         line-height: 1.25em;
-                        text-align: center;
-                        font-weight: 400;
                         font-family: 'Oswald', sans-serif;
                     }
                 }
@@ -34,15 +34,15 @@
                     h2 {
                         font-size: 30px;
                         font-weight: 700;
-                        font-family: 'Courier New', Courier, monospace;
                         text-align: center;
+                        font-family: 'Courier New', Courier, monospace;
                     }
                 }
                 .services_line {
-                    text-align: center;
-                    padding-top: 15px;
-                    padding-bottom: 15px;
                     display: flex;
+                    padding-top: 15px;
+                    text-align: center;
+                    padding-bottom: 15px;
                     .line {
                         width: 50px;
                         margin: 0 auto;
@@ -69,29 +69,29 @@
         padding: 100px 0;
         .container {
             display: flex;
-            margin-right: auto;
             margin-left: auto;
+            margin-right: auto;
             position: relative;
             max-width: 1340px;
             .services_section {
-                position: relative;
-                min-height: 1px;
-                display: flex;
                 width: 100%;
+                display: flex;
+                min-height: 1px;
+                position: relative;
                 .services {
-                    position: relative;
                     width: 100%;
                     flex-wrap: wrap;
+                    position: relative;
                     align-content: flex-start;
                     .text_top {
                         margin-bottom: 10px;
                         .services_text_top {
-                            color: #00000061;
-                            letter-spacing: 2px;
-                            font-size: 0.8rem;
-                            line-height: 1.25em;
-                            text-align: center;
                             font-weight: 400;
+                            font-size: 0.8rem;
+                            color: #00000061;
+                            text-align: center;
+                            letter-spacing: 2px;
+                            line-height: 1.25em;
                             font-family: 'Oswald', sans-serif;
                         }
                     }
@@ -100,15 +100,15 @@
                         h2 {
                             font-size: 3rem;
                             font-weight: 700;
-                            font-family: 'Courier New', Courier, monospace;
                             text-align: center;
+                            font-family: 'Courier New', Courier, monospace;
                         }
                     }
                     .services_line {
-                        text-align: center;
-                        padding-top: 15px;
-                        padding-bottom: 15px;
                         display: flex;
+                        padding-top: 15px;
+                        text-align: center;
+                        padding-bottom: 15px;
                         .line {
                             width: 50px;
                             margin: 0 auto;
@@ -119,8 +119,8 @@
                         padding: 25px 0 0;
                         .card_section {
                             display: flex;
-                            margin-right: auto;
                             margin-left: auto;
+                            margin-right: auto;
                             position: relative;
                         }
                     }
@@ -135,29 +135,29 @@
         padding: 100px 0;
         .container {
             display: flex;
-            margin-right: auto;
             margin-left: auto;
-            position: relative;
             max-width: 1340px;
+            margin-right: auto;
+            position: relative;
             .services_section {
-                position: relative;
-                min-height: 1px;
-                display: flex;
                 width: 100%;
+                display: flex;
+                min-height: 1px;
+                position: relative;
                 .services {
-                    position: relative;
                     width: 100%;
                     flex-wrap: wrap;
+                    position: relative;
                     align-content: flex-start;
                     .text_top {
                         margin-bottom: 10px;
                         .services_text_top {
-                            color: #00000061;
-                            letter-spacing: 2px;
-                            font-size: 0.8rem;
-                            line-height: 1.25em;
-                            text-align: center;
                             font-weight: 400;
+                            font-size: 0.8rem;
+                            color: #00000061;
+                            text-align: center;
+                            letter-spacing: 2px;
+                            line-height: 1.25em;
                             font-family: 'Oswald', sans-serif;
                         }
                     }
@@ -166,15 +166,15 @@
                         h2 {
                             font-size: 3rem;
                             font-weight: 700;
-                            font-family: 'Courier New', Courier, monospace;
                             text-align: center;
+                            font-family: 'Courier New', Courier, monospace;
                         }
                     }
                     .services_line {
-                        text-align: center;
-                        padding-top: 15px;
-                        padding-bottom: 15px;
                         display: flex;
+                        padding-top: 15px;
+                        text-align: center;
+                        padding-bottom: 15px;
                         .line {
                             width: 50px;
                             margin: 0 auto;

@@ -4,8 +4,8 @@
     margin:auto;
     margin-top: 100px;
     margin-bottom: 50px;
-    justify-content: center;
     border-radius: 20px;
+    justify-content: center;  
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     &:hover{
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -18,12 +18,12 @@
           font-size: 16px;
         }
     .Email{
-        margin-top: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        font-size: 14px;
-        color: #333;
         width: 90%;
+        padding: 10px;
+        color: #333;
+        font-size: 14px;
+        margin-top: 10px;
+        border-radius: 5px;
         border: 1px solid #ccc;
       }
       .Email:focus{
@@ -36,12 +36,12 @@
       }
       .Button{
         width: 100%;
-        margin-top: 10px;
         padding: 10px;
-        border-radius: 5px;
-        font-size: 14px;
         color: #333;
+        font-size: 14px;
         cursor: pointer;
+        margin-top: 10px;
+        border-radius: 5px;
         border: 1px solid #ccc;
       }
       .Button:hover{
@@ -57,8 +57,8 @@
     margin:auto;
     margin-top: 100px;
     margin-bottom: 50px;
-    justify-content: center;
     border-radius: 20px;
+    justify-content: center;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     &:hover{
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -68,12 +68,12 @@
         display: flex;
         flex-direction: column;
     .Email{
-        margin-top: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        font-size: 16px;
-        color: #333;
         width: 93%;
+        padding: 10px;
+        color: #333;
+        font-size: 16px;
+        margin-top: 10px;
+        border-radius: 5px;
         border: 1px solid #ccc;
       }
       .Email:focus{
@@ -86,12 +86,12 @@
       }
       .Button{
         width: 100%;
-        margin-top: 10px;
         padding: 10px;
-        border-radius: 5px;
-        font-size: 16px;
         color: #333;
+        font-size: 16px;
         cursor: pointer;
+        margin-top: 10px;
+        border-radius: 5px;
         border: 1px solid #ccc;
       }
       .Button:hover{
@@ -106,9 +106,9 @@
     width: 30%;
     margin:auto;
     margin-top: 100px;
+    border-radius: 20px;
     margin-bottom: 50px;
     justify-content: center;
-    border-radius: 20px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     &:hover{
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -118,12 +118,12 @@
         display: flex;
         flex-direction: column;
     .Email{
-        margin-top: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        font-size: 16px;
-        color: #333;
         width: 93%;
+        color: #333;
+        padding: 10px;
+        font-size: 16px;
+        margin-top: 10px;
+        border-radius: 5px;
         border: 1px solid #ccc;
       }
       .Email:focus{
@@ -136,12 +136,12 @@
       }
       .Button{
         width: 100%;
-        margin-top: 10px;
         padding: 10px;
-        border-radius: 5px;
-        font-size: 16px;
         color: #333;
         cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+        border-radius: 5px;
         border: 1px solid #ccc;
       }
       .Button:hover{

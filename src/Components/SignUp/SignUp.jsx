@@ -10,7 +10,6 @@ export const SignUp = () => {
 
   const handleNameChange = ( event) => {
     setUserName(event.target.value);
-    // console.log(setUserName);
     console.log(userName);
   };
 
@@ -46,14 +45,14 @@ export const SignUp = () => {
 
 return(
 <div className={style.SignIn_Wrapper}>
-<div className={style.Input_Fields}>
-<h2>Signup to your account</h2>
-<input className={style.Email} type="string" name="userName" placeholder="UserName" onChange={handleNameChange}/>
-<input className={style.Email} type="string" name="email" placeholder="Email" onChange={handleEmailChange}/>
-<input className={style.Email} type="Number" name="mobileNo" placeholder="Mobile Number" onChange={handleMobileChange}/>
-<input className={style.Email} type="password" name="password" placeholder="Password" onChange={handlePasswordChange}/>
-<button className={style.Button} type="submit" onClick={handleSubmit}>Sign Up</button>
-</div>
+  <div className={style.Input_Fields}>
+   <h2>Signup to your account</h2>
+   <input className={style.Email} type="string" name="userName" placeholder="UserName" onChange={handleNameChange}/>
+   <input className={style.Email} type="string" name="email" placeholder="Email" onChange={handleEmailChange}/>
+   <input className={style.Email} type="Number" name="mobileNo" placeholder="Mobile Number" onChange={handleMobileChange}/>
+   <input className={style.Email} type="password" name="password" placeholder="Password" onChange={handlePasswordChange}/>
+   <button className={style.Button} type="submit" onClick={handleSubmit}>Sign Up</button>
+  </div>
 </div>
 );
 };

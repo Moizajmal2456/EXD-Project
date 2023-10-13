@@ -9,7 +9,7 @@ const ServiceItem = () => {
             <div className={styles.card_wrapper}>
                 <div className={styles.card_icon}>
                     <span className={styles.icon}>
-                    <i class="fas fa-shipping-fast"></i>
+                     <i class="fas fa-shipping-fast"></i>
                     </span>
                 </div>
                 <div className={styles.card_text}>
@@ -24,7 +24,7 @@ const ServiceItem = () => {
             <div className={styles.card_wrapper}>
                 <div className={styles.card_icon}>
                     <span className={styles.icon}>
-                    <i class="fas fa-shipping-fast"></i>
+                     <i class="fas fa-shipping-fast"></i>
                     </span>
                 </div>
                 <div className={styles.card_text}>
@@ -39,7 +39,7 @@ const ServiceItem = () => {
             <div className={styles.card_wrapper}>
                 <div className={styles.card_icon}>
                     <span className={styles.icon}>
-                    <i class="fas fa-shipping-fast"></i>
+                     <i class="fas fa-shipping-fast"></i>
                     </span>
                 </div>
                 <div className={styles.card_text}>
@@ -54,7 +54,7 @@ const ServiceItem = () => {
             <div className={styles.card_wrapper}>
                 <div className={styles.card_icon}>
                     <span className={styles.icon}>
-                    <i class="fas fa-shipping-fast"></i>
+                     <i class="fas fa-shipping-fast"></i>
                     </span>
                 </div>
                 <div className={styles.card_text}>

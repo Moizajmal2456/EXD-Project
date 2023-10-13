@@ -22,7 +22,7 @@ return(
   <div className={styles.Left_Section}>
         <ul>
             <li className={styles.Home}>
-            <Link to="/">Home</Link>
+             <Link to="/">Home</Link>
             </li>
             <li className={styles.Home}>
              <Link to="/contactus">Contact Us</Link>
@@ -45,8 +45,7 @@ return(
       <button>
         <Link to="/login">Login </Link>
       </button>
-        <i className="fa-solid fa-cart-shopping"></i>
-        {/* <img src="/Images/Addtocart.jpg" alt="Add to cart"/> */}
+      <i className="fa-solid fa-cart-shopping"></i>
   </div>
 </div>
 );
