@@ -11,9 +11,7 @@ const AboutServices = () => {
         </div>
       </div>
       <div className={styles.services_section}>
-        <div className={styles.services_cards}>
           <AboutServiceItem/>
-        </div>
       </div>
     </div>
   )

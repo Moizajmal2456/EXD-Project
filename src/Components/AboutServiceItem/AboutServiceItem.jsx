@@ -36,7 +36,7 @@ const AboutServiceItem = () => {
         </div>
       </div>
     </div>
-    <div className={styles.card_container}>
+    {/* <div className={styles.card_container}>
       <div className={styles.card}>
         <div className={styles.card_icon_section}>
         </div>
@@ -68,7 +68,7 @@ const AboutServiceItem = () => {
           <span>Read More</span>
         </div>
       </div>
-    </div>
+    </div> */}
     </>
   )
 }
