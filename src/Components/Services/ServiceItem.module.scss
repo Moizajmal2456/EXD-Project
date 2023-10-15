@@ -1,45 +1,141 @@
-.card_col{
-    width: 25%;
-    .card{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    align-content: flex-start;
-    .card_wrapper{
-        display: block;
-        text-align: center;
-        .card_icon{
-            margin-bottom: 10px;
-            margin-right: auto;
-            margin-left: auto;
-            .icon{
-                font-size: 20px;
-                fill: #c19a83;
-                color: #c19a83;
-                border-color: #c19a83;
+@media (max-width: 450px) { 
+    .card_col{
+        width: 25%;
+        .card{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        align-content: flex-start;
+        .card_wrapper{
+            display: block;
+            text-align: center;
+            .card_icon{
+                margin-bottom: 10px;
+                margin-right: auto;
+                margin-left: auto;
+                .icon{
+                    font-size: 20px;
+                    fill: #c19a83;
+                    color: #c19a83;
+                    border-color: #c19a83;
+                }
+            }
+            .card_text{
+                h4{
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.2em;
+                    margin-bottom: 10px;
+                    text-transform: none;
+                    font-family: 'Oswald',sans-serif;
+                }
+                p{
+                    border: 0;
+                    outline: 0;
+                    padding: 0;
+                    color: #54595F;
+                    font-size: 15px;
+                    font-style: inherit;
+                    font-weight: inherit;
+                    vertical-align: baseline;
+                }
             }
         }
-        .card_text{
-            h4{
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 1.2em;
-                margin-bottom: 10px;
-                text-transform: none;
-                font-family: 'Oswald',sans-serif;
-            }
-            p{
-                border: 0;
-                outline: 0;
-                padding: 0;
-                color: #54595F;
-                font-size: 15px;
-                font-style: inherit;
-                font-weight: inherit;
-                vertical-align: baseline;
-            }
         }
     }
+}
+@media(min-width: 451px) and (max-width: 768px) { 
+    .card_col{
+        width: 30%;
+        .card{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        align-content: flex-start;
+        .card_wrapper{
+            display: block;
+            text-align: center;
+            .card_icon{
+                margin-bottom: 10px;
+                margin-right: auto;
+                margin-left: auto;
+                .icon{
+                    font-size: 20px;
+                    fill: #c19a83;
+                    color: #c19a83;
+                    border-color: #c19a83;
+                }
+            }
+            .card_text{
+                h4{
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.2em;
+                    margin-bottom: 10px;
+                    text-transform: none;
+                    font-family: 'Oswald',sans-serif;
+                }
+                p{
+                    border: 0;
+                    outline: 0;
+                    padding: 0;
+                    color: #54595F;
+                    font-size: 15px;
+                    font-style: inherit;
+                    font-weight: inherit;
+                    vertical-align: baseline;
+                }
+            }
+        }
+        }
+    }
+}
+@media(min-width: 769px) and (max-width: 2560px) { 
+    .card_col{
+        width: 25%;
+        .card{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        align-content: flex-start;
+        .card_wrapper{
+            display: block;
+            text-align: center;
+            .card_icon{
+                margin-bottom: 10px;
+                margin-right: auto;
+                margin-left: auto;
+                .icon{
+                    font-size: 20px;
+                    fill: #c19a83;
+                    color: #c19a83;
+                    border-color: #c19a83;
+                }
+            }
+            .card_text{
+                h4{
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.2em;
+                    margin-bottom: 10px;
+                    text-transform: none;
+                    font-family: 'Oswald',sans-serif;
+                }
+                p{
+                    border: 0;
+                    outline: 0;
+                    padding: 0;
+                    color: #54595F;
+                    font-size: 15px;
+                    font-style: inherit;
+                    font-weight: inherit;
+                    vertical-align: baseline;
+                }
+            }
+        }
+        }
     }
 }
