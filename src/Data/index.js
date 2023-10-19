@@ -342,3 +342,35 @@ export const Price = [
     { id:4, name:"4000 - 5000"},
     { id:5, name:"5000 - 6000"},
 ];
+export const ServiceData = [
+    {
+        heading:"Best Prices & Offers",
+        text:"lThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
+        btnText:"Read More",
+    },
+    {
+        heading:"Wide Assortment",
+        text:"lThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
+        btnText:"Read More",
+    },
+    {
+        heading:"Free Delivery",
+        text:"lThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
+        btnText:"Read More",
+    },
+    {
+        heading:"Easy Returns",
+        text:"lThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
+        btnText:"Read More",
+    },
+    {
+        heading:"100% Satisfaction",
+        text:"lThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
+        btnText:"Read More",
+    },
+    {
+        heading:"Great Daily Deals",
+        text:"lThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
+        btnText:"Read More",
+    },
+]

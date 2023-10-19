@@ -1,0 +1,27 @@
+@media (max-width: 450px) { 
+    .CardsWrapper{
+        width: 20%;
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 15px;
+        line-height: 1;
+        gap: 5px;
+        border: 1px solid #ececec;
+        h2{
+            font-size: 14px;
+            font-weight: 900;
+        }
+        p{
+            font-size: 14px;
+        }
+        button{
+            border: none;
+            color: rgb(46, 148, 46);
+            background-color: #fff;
+        }
+    }
+}
+@media(min-width: 451px) and (max-width: 768px) { }
+@media(min-width: 769px) and (max-width: 2560px) { }

@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from "./styles.module.scss";
 import AboutServiceItem from '../AboutServiceItem/AboutServiceItem';
+import { ServiceData } from '../../Data';
+import { ServiceCards } from '../../Cards/Card/ServiceCard/ServiceCard';
 const AboutServices = () => {
   return (
     <div className={styles.services_container}>
@@ -11,7 +13,15 @@ const AboutServices = () => {
         </div>
       </div>
       <div className={styles.services_section}>
-          <AboutServiceItem/>
+          {ServiceData.map(service => {
+            return(
+              <ServiceCards
+              heading={service.heading}
+              paragraph={service.text}
+              buttonText={service.btnText}
+              />
+            )
+          })}
       </div>
     </div>
   )
