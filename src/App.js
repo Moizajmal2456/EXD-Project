@@ -10,8 +10,23 @@ import { DetailPage } from './Pages/DetailPage';
 import { PrivateRoute } from './Components/PrivateRoute/PrivateRoute';
 import { AddCartPage } from './Pages/AddToCartPage';
 import { SelectedProductPages } from './Pages/SelectedProduct';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/database';
 
 function App() {
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBkZbGu9gYFaQJzkCJ_IlbD6mqGoizUT4w",
+    authDomain: "e-commerce-3bfc4.firebaseapp.com",
+    projectId: "e-commerce-3bfc4",
+    storageBucket: "e-commerce-3bfc4.appspot.com",
+    messagingSenderId: "143704383866",
+    appId: "1:143704383866:web:367e7119084e2e2bafb6c3"
+  };
+  if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+  }
+
   return (
   <div>
     <BrowserRouter>
