@@ -1,92 +1,198 @@
-.container{
-    gap: 10px;
-    display: flex;
-    margin-left: 20px;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    .item_section{
-        width: 70%;
-        padding: 30px 10px;
-        border-radius: 15px;
-        border: 0.05rem solid #ececec;
-        .item{
-            gap: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            .item_detail{
-                gap: 10px;
+@media (max-width: 450px) { }
+@media(min-width: 451px) and (max-width: 768px) {
+    .container{
+        width: 100%;
+        gap: 10px;
+        display: flex;
+        margin-left: 20px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        .item_section{
+            width: 60%;
+            padding: 30px 10px;
+            border-radius: 15px;
+            border: 0.05rem solid #ececec;
+            .item{
+                gap: 20px;
                 display: flex;
-                margin-right: 150px;
-                .img_wrap{
-                    width: 50%;
-                    img{
-                       width: 100%;
+                align-items: center;
+                justify-content: center;
+                .item_detail{
+                    gap: 10px;
+                    display: flex;
+                    margin-right: 10px;
+                    .img_wrap{
+                        align-items: center;
+                        width: 100%;
+                        img{
+                           width: 100%;
+                        }
+                    }
+                    .text_wrap{
+                        width: 50%;
+                        display: flex;
+                        padding: 10px 0;
+                        flex-direction: column;
+                        h3{
+                            font-size: 15px;
+                        }
+                        p{
+                            font-size: 12px;
+                            line-height: 0.9;
+                        }
                     }
                 }
-                .text_wrap{
-                    width: 50%;
+                .price_detail{
+                    width: 30%;
                     display: flex;
-                    padding: 10px 0;
+                    margin-right: 5%;
                     flex-direction: column;
-                    h3{
+                    .Newpri{
                         font-size: 18px;
+                        margin: 10px 0px;
+                        color: rgb(223, 17, 34);
+                    }
+                    .pri{
+                        color: #444;
+                        font-size: 12px;
+                        font-weight: 700;
+                        margin-bottom: 10px;
                     }
                     p{
-                        font-size: 14px;
-                        line-height: 0.9;
+                        font-size: 12px;
+                    }
+                }
+                .counter{
+                    width: 30%;
+                    display: flex;
+                    gap: 10px;
+                    .countBtn{
+                        border: none;
+                        color: #fff;
+                        border-radius: 4px;
+                        background-color: #444;
                     }
                 }
             }
-            .price_detail{
-                width: 40%;
-                display: flex;
-                margin-right: 15%;
-                flex-direction: column;
-                .Newpri{
-                    font-size: 22px;
-                    color: rgb(223, 17, 34);
-                }
-                .pri{
-                    color: #444;
-                    font-size: 14px;
-                    font-weight: 700;
-                    margin-bottom: 10px;
-                }
-            }
-            .counter{
-                display: flex;
-                gap: 10px;
-                .countBtn{
+            &:hover
+              {
+               box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+              }
+        }
+        .bill_section{
+            width: 40%;
+            margin-left: 10px;
+            margin-top: 10px;
+            .final_btn{
+                font-size: 20px;
+                color: #056308;
+                font-weight: bold;
+                border-radius: 8px;
+                padding: 20px 20px;
+                background-color: #fff;
+                border: 2px solid #056308;
+                &:hover{
                     border: none;
                     color: #fff;
-                    border-radius: 4px;
-                    background-color: #444;
+                    background-color: #056308;
                 }
             }
         }
-        &:hover
-          {
-           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          }
     }
-    .bill_section{
-        width: 30%;
-        margin-left: 50px;
-        margin-top: 30px;
-        .final_btn{
-            font-size: 24px;
-            color: #056308;
-            font-weight: bold;
-            border-radius: 8px;
-            padding: 20px 40px;
-            background-color: #fff;
-            border: 2px solid #056308;
-            &:hover{
-                border: none;
-                color: #fff;
-                background-color: #056308;
+ }
+
+@media(min-width: 769px) and (max-width: 2560px) {
+    .container{
+        gap: 10px;
+        display: flex;
+        margin-left: 20px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        .item_section{
+            width: 70%;
+            padding: 30px 10px;
+            border-radius: 15px;
+            border: 0.05rem solid #ececec;
+            .item{
+                gap: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .item_detail{
+                    gap: 10px;
+                    display: flex;
+                    margin-right: 150px;
+                    .img_wrap{
+                        width: 50%;
+                        img{
+                           width: 100%;
+                        }
+                    }
+                    .text_wrap{
+                        width: 50%;
+                        display: flex;
+                        padding: 10px 0;
+                        flex-direction: column;
+                        h3{
+                            font-size: 18px;
+                        }
+                        p{
+                            font-size: 14px;
+                            line-height: 0.9;
+                        }
+                    }
+                }
+                .price_detail{
+                    width: 40%;
+                    display: flex;
+                    margin-right: 15%;
+                    flex-direction: column;
+                    .Newpri{
+                        font-size: 22px;
+                        color: rgb(223, 17, 34);
+                    }
+                    .pri{
+                        color: #444;
+                        font-size: 14px;
+                        font-weight: 700;
+                        margin-bottom: 10px;
+                    }
+                }
+                .counter{
+                    width: 40%;
+                    display: flex;
+                    gap: 10px;
+                    .countBtn{
+                        border: none;
+                        color: #fff;
+                        border-radius: 4px;
+                        background-color: #444;
+                    }
+                }
+            }
+            &:hover
+              {
+               box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+              }
+        }
+        .bill_section{
+            width: 30%;
+            margin-left: 50px;
+            margin-top: 30px;
+            .final_btn{
+                font-size: 24px;
+                color: #056308;
+                font-weight: bold;
+                border-radius: 8px;
+                padding: 20px 40px;
+                background-color: #fff;
+                border: 2px solid #056308;
+                &:hover{
+                    border: none;
+                    color: #fff;
+                    background-color: #056308;
+                }
             }
         }
     }
-}
+ }
