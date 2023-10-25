@@ -1,13 +1,14 @@
 @media (max-width: 450px) {
     .container{
-        width: 100%;
+        width: 90%;
         gap: 10px;
         display: flex;
-        margin-left: 20px;
         margin-top: 100px;
-        margin-bottom: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        flex-direction: column;
         .item_section{
-            width: 60%;
             padding: 30px 10px;
             border-radius: 15px;
             border: 0.05rem solid #ececec;
@@ -79,11 +80,11 @@
               }
         }
         .bill_section{
-            width: 40%;
-            margin-left: 10px;
-            margin-top: 10px;
+            width: 50%;
+            margin:  10px auto;
+            align-items: center;
             .final_btn{
-                font-size: 20px;
+                font-size: 15px;
                 color: #056308;
                 font-weight: bold;
                 border-radius: 8px;
