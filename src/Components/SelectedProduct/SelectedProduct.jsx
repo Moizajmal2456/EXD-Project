@@ -1,9 +1,9 @@
-import React from "react";
 import style from "./styles.module.scss";
 import { Cards } from "../../Cards/Card/Cards";
 import { AllProductData, BagsBrands, BagsVariant, PentsBrands, PentsVariant, Price, ShirtsBrands, ShirtsVariant, ShoesBrands, ShoesVariant} from "../../Data";
 import { useParams } from "react-router-dom";
 import { FilterButton } from "../Filtering/FilterButton";
+import { useSelector } from "react-redux";
 
 export const SelectedProduct = () => {
   const allProductData = [...AllProductData];
@@ -11,7 +11,8 @@ export const SelectedProduct = () => {
   const { productType } = useParams();
   const productData = allProductData.filter((data) => data.productType === productType); 
   // const filtersData = filterData.filter((data) => data.productType === productType);
-
+  
+  const optionSelected = useSelector((state) => state.filter);
   const filtersData = () => {
   if(productType === "Shoe"){
     return(<div><FilterButton brands={ShoesBrands}
@@ -38,6 +39,7 @@ return (
 <div className={style.Filters_Warpper}>
   <div className={style.Filters}>
     {filtersData()}
+    <button>{optionSelected}</button>
   </div>
   <div className={style.Products_Wrapper}>
     {productData.map((obj) => {
