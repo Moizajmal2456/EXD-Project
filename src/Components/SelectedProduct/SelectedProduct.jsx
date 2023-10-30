@@ -39,7 +39,6 @@ return (
 <div className={style.Filters_Warpper}>
   <div className={style.Filters}>
     {filtersData()}
-    <button>{optionSelected}</button>
   </div>
   <div className={style.Products_Wrapper}>
     {productData.map((obj) => {

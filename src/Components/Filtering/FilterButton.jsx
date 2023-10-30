@@ -9,16 +9,19 @@ const dispatch = useDispatch();
 const handleBrandsFiler = (event) => {
    const selectedValue = event.target.value;
    dispatch(brandsFilter(selectedValue));
+   console.log(selectedValue);
 }
 
 const handleVariantsFilter = (event) => {
    const selectedValue = event.target.value;
    dispatch(variantsFilter(selectedValue));
+   console.log(selectedValue);
 }
 
 const handlePriceFilter = (event) => {
    const selectedValue = event.target.value;
    dispatch(priceFilter(selectedValue));
+   console.log(selectedValue);
 }
 
 return(
@@ -27,7 +30,7 @@ return(
           <select id="brands-sorting" onChange={handleBrandsFiler}>
              {brands.map((brand) => {
              return(
-             <option key={brand.id} value={brand.id}>{brand.name}</option>
+             <option key={brand.id} value={brand.name}>{brand.name}</option>
              )
              })}
           </select>
@@ -36,7 +39,7 @@ return(
           <select id="variants-sorting" onChange={handleVariantsFilter}>
              {variants.map((variant) => {
               return(
-              <option key={variant.id} value={variant.id}>{variant.name}</option>
+              <option key={variant.id} value={variant.name}>{variant.name}</option>
                )
               })}
            </select>
@@ -45,7 +48,7 @@ return(
           <select id="price-sorting" onChange={handlePriceFilter}>
              {pricerange.map((price) => {
               return(
-              <option key={price.id} value={price.id}>{price.name}</option>
+              <option key={price.id} value={price.name}>{price.name}</option>
                )
                })}
           </select>
