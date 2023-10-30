@@ -12,7 +12,7 @@ export const SelectedProduct = () => {
   const productData = allProductData.filter((data) => data.productType === productType); 
   // const filtersData = filterData.filter((data) => data.productType === productType);
   
-  const optionSelected = useSelector((state) => state.filter);
+  const Selected = useSelector((state) => state.filter);
   const filtersData = () => {
   if(productType === "Shoe"){
     return(<div><FilterButton brands={ShoesBrands}
