@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 import { useParams } from 'react-router-dom';
 import { AllProductData } from '../../Data';
 import { useDispatch, useSelector } from 'react-redux';
-import { decrement, increment } from '../Counter/counter';
+import { decrement, increment } from '../../Reducers/counter';
 
 export const AddToCartPage = () => {
 

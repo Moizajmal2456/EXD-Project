@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 import { AllProductData } from '../../Data';
 import { Link, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { decrement, increment } from '../Counter/counter';
+import { decrement, increment } from '../../Reducers/counter';
 
 export const Detail = () => {
 

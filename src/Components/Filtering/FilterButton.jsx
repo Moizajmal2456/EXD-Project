@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import style from "./styles.module.scss";
-import { brandsFilter, priceFilter, variantsFilter } from "../FilteredStateHandling/Filtered";
+import { brandsFilter, priceFilter, variantsFilter } from "../../Reducers/filter";
 
 export const FilterButton = ({brands, variants, pricerange }) => {
 
