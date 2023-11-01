@@ -5,7 +5,7 @@ const filterSlice = createSlice ({
  initialState: {
   brands: [],
   variants: [],
-  price: 0,
+  price: [],
 },
    reducers:{
      brandsFilter: (state) => state,
