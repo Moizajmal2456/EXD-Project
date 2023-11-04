@@ -2,15 +2,11 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const filterSlice = createSlice ({
  name:"filter",
- initialState: {
-  brands: "",
-  variants: "",
-  price: "",
- },
+ initialState: "",
    reducers:{
-     brandsFilter: (state) => state.brands,
-     variantsFilter: (state) => state.variants,
-     priceFilter: (state) => state.price,
+     brandsFilter: (state) => state,
+     variantsFilter: (state) => state,
+     priceFilter: (state) => state,
     },
 });
 

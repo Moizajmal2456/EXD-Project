@@ -9,16 +9,19 @@ const dispatch = useDispatch();
 const handleBrandsFiler = (event) => {
    const selectedValue = event.target.value;
    dispatch(brandsFilter(selectedValue));
+   console.log(selectedValue);
 }
 
 const handleVariantsFilter = (event) => {
    const selectedValue = event.target.value;
    dispatch(variantsFilter(selectedValue));
+   console.log(selectedValue);
 }
 
 const handlePriceFilter = (event) => {
    const selectedValue = event.target.value;
    dispatch(priceFilter(selectedValue));
+   console.log(selectedValue);
 }
 
 return(
