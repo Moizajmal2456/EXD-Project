@@ -15,6 +15,13 @@ return(
        productID={product.id}
       />
     )})}
+    {/* <div className={style.overlay}>
+      <span className="fa fa-star text-warning checked"></span>
+      <span className="fa fa-star text-warning checked"></span>
+      <span className="fa fa-star text-warning checked"></span>
+      <span className="fa fa-star text-warning checked"></span>
+      <span className="fa fa-star"></span>
+    </div> */}
  </div>
 );
 };
