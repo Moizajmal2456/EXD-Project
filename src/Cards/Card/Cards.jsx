@@ -7,6 +7,13 @@ return(
   <img src={image} alt="Bag pic"/>
   <h4>{heading}</h4>
   <p>{price}</p>
+  <div className={style.star}>
+      <span className="fa fa-star text-warning checked"></span>
+      <span className="fa fa-star text-warning checked"></span>
+      <span className="fa fa-star text-warning checked"></span>
+      <span className="fa fa-star text-warning checked"></span>
+      <span className="fa fa-star"></span>
+    </div>
   <div className={style.Button_Wrap}>
      <Link to={`/detailpage/${productID}`}>
        <button className={style.Button}>{buttonText}</button>
