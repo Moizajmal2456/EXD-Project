@@ -26,7 +26,7 @@ export const AddToCartPage = () => {
         <div className={styles.item}>
           <div className={styles.item_detail}>
             <div className={styles.img_wrap}>
-             <img src={product.img} alt="shirt" />
+             <img src={product.img} alt="product" />
             </div>
             <div className={styles.text_wrap}>
               <h3>{product.heading}</h3>

@@ -7,16 +7,16 @@ import { decrement, increment } from '../../Reducers/counter';
 
 export const Detail = () => {
 
-  const Count = useSelector((state) => state.counter);
-  const dispatch = useDispatch();
+  // const Count = useSelector((state) => state.counter);
+  // const dispatch = useDispatch();
 
-  const [count, setCount] = useState(1);
-  const handleIncrement = () =>{
-    dispatch(increment());
-  }
-  const handleDecrement = () =>{
-    dispatch(decrement());
-  }
+  // const [count, setCount] = useState(1);
+  // const handleIncrement = () =>{
+  //   dispatch(increment());
+  // }
+  // const handleDecrement = () =>{
+  //   dispatch(decrement());
+  // }
   
   const { id } = useParams();
   const product = AllProductData.find((m) => m.id == id);
@@ -37,11 +37,11 @@ export const Detail = () => {
           <i class="fa-solid fa-star"></i>
         </p>
         <b>Price{product.price}</b>
-        <div className={styles.counter}>
+        {/* <div className={styles.counter}>
          <button className={styles.countBtn} onClick={handleIncrement}>+</button>
          <span>{Count}</span>
          <button className={styles.countBtn} onClick={handleDecrement}>-</button>
-        </div>
+        </div> */}
         <div className='text-center d-block mb-3 pb-3'>
           <Link to ={`/addtocartpage/${id}`}>
           <button className={styles.btn}>Add To Cart</button>

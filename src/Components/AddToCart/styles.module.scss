@@ -222,9 +222,9 @@
                 .item_detail{
                     gap: 10px;
                     display: flex;
-                    margin-right: 150px;
+                    margin-right: 50px;
                     .img_wrap{
-                        width: 50%;
+                        width: 100%;
                         img{
                            width: 100%;
                         }
@@ -233,6 +233,8 @@
                         width: 50%;
                         display: flex;
                         padding: 10px 0;
+                        justify-content: center;
+                        align-items: center;
                         flex-direction: column;
                         h3{
                             font-size: 18px;
@@ -246,7 +248,7 @@
                 .price_detail{
                     width: 40%;
                     display: flex;
-                    margin-right: 15%;
+                    margin-right: 8%;
                     flex-direction: column;
                     .Newpri{
                         font-size: 22px;
