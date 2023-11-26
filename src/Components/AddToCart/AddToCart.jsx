@@ -20,6 +20,7 @@ export const AddToCartPage = () => {
     dispatch(decrement());
   }
 
+
   return (
     <div className={styles.container}>
       <div className={styles.item_section}>
