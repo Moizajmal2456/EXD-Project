@@ -20,7 +20,8 @@ export const AddToCartPage = () => {
     dispatch(decrement());
   }
 
-
+ const number = product.price;
+ const result = number * Count;
   return (
     <div className={styles.container}>
       <div className={styles.item_section}>
@@ -35,7 +36,7 @@ export const AddToCartPage = () => {
             </div>
           </div>
           <div className={styles.price_detail}>
-            <h6 className={styles.Newpri}>{product.price}</h6>
+            <h6 className={styles.Newpri}>{result}</h6>
             <del className={styles.pri}>RS.750.00</del>
             <p>50%</p>
           </div>
