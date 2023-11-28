@@ -2,7 +2,7 @@ export const AllProductData = [
     {   
         id:1,
         buttonText:"Buy",
-        price:"Rs 1150/-",
+        price: 1150,
         productType:"Shirt",
         img:"../Images/Shirt1.webp",
         heading:"Round Neck TShirt",
@@ -10,7 +10,7 @@ export const AllProductData = [
       },
       {
           id:2,
-          price:"Rs 1270/-",
+          price:1270,
           buttonText:"Buy",
           productType:"Shirt",
           heading:" Collar TShirt",
@@ -20,7 +20,7 @@ export const AllProductData = [
       { 
           id:3,
           buttonText:"Buy",
-          price:"Rs 1650/-",
+          price: 1650,
           productType:"Shirt",
           heading:"Check Shirt",
           img :"../Images/Shirt3.jpg",
@@ -28,7 +28,7 @@ export const AllProductData = [
       },
       {   
           id:4,
-          price:"Rs 1200/-",
+          price: 1200,
           buttonText:"Buy",
           productType:"Shirt",
           heading:"Collar TShirt",
@@ -37,7 +37,7 @@ export const AllProductData = [
       },
       {
         id:5,
-        price:"Rs 1550/-",
+        price: 1550 ,
         buttonText:"Buy",
         productType:"Pent",
         heading:"Line Pent",
@@ -47,7 +47,7 @@ export const AllProductData = [
       {
           id:6,
           buttonText:"Buy",
-          price:"Rs 1750/-",
+          price: 1750,
           productType:"Pent",
           heading:"Jeans Cotton",
           img:"../Images/Pent2.jpg",
@@ -56,7 +56,7 @@ export const AllProductData = [
       {  
           id:7,
           buttonText:"Buy",
-          price:"Rs 1900/-",
+          price: 1900,
           productType:"Pent",
           heading:"Jeans Pent",
           img :"../Images/Pent3.webp",
@@ -66,7 +66,7 @@ export const AllProductData = [
       {
           id:8,
           buttonText:"Buy",
-          price:"Rs 1250/-",
+          price: 1250,
           productType:"Pent",
           heading:"Trousers",
           img:"../Images/Pent4.jpg",
@@ -75,7 +75,7 @@ export const AllProductData = [
     {
       id:9,
       buttonText:"Buy",
-      price:"Rs 1550/-",
+      price: 1550,
       productType:"Bag",
       heading:"Gents Bag",
       img:"../Images/BagsPic1.webp",
@@ -84,7 +84,7 @@ export const AllProductData = [
     {
         id:10,
         buttonText:"Buy",
-        price:"Rs 1570/-",
+        price: 1570,
         productType:"Bag",
         heading:"Ladies Bag",
         img:"../Images/BagsPic2.jpeg",
@@ -94,7 +94,7 @@ export const AllProductData = [
         id:11,
         buttonText:"Buy",
         productType:"Bag",
-        price:"Rs 1200/-",
+        price: 1200,
         heading:"Gents Bag",
         img :"../Images/BagsPic3.jpeg",
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
@@ -103,7 +103,7 @@ export const AllProductData = [
     {
         id:12,
         buttonText:"Buy",
-        price:"Rs 1800/-",
+        price: 1800,
         productType:"Bag",
         heading:"Ladies Bag",
         img:"../Images/BagsPic4.webp",
@@ -112,7 +112,7 @@ export const AllProductData = [
     {
         id:13,
         buttonText:"Buy",
-        price:"Rs 1550/-",
+        price: 1550,
         heading:"Lophers",
         productType:"Shoe",
         img:"../Images/Shoes1.webp",
@@ -121,7 +121,7 @@ export const AllProductData = [
       {
           id:14,
           buttonText:"Buy",
-          price:"Rs 1570/-",
+          price: 1570,
           productType:"Shoe",
           heading:"Leather Shoes",
           img:"../Images/Shoes2.webp",
@@ -130,7 +130,7 @@ export const AllProductData = [
       {  
           id:15,
           buttonText:"Buy",
-          price:"Rs 1200/-",
+          price: 1200,
           productType:"Shoe",
           heading:"Skin Color Shoes",
           img :"../Images/Shoes3.jpg",

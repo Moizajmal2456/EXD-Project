@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { AllProductData } from '../../Data';
 import { useDispatch, useSelector } from 'react-redux';
 import { decrement, increment } from '../../Reducers/counter';
+import { configureStore } from '@reduxjs/toolkit';
 
 export const AddToCartPage = () => {
 
@@ -18,10 +19,10 @@ export const AddToCartPage = () => {
   }
   const handleDecrement = () => {
     dispatch(decrement());
-  }
+  } 
+  const price = product.price;
+  const result =  price * Count;
 
- const number = product.price;
- const result = number * Count;
   return (
     <div className={styles.container}>
       <div className={styles.item_section}>
