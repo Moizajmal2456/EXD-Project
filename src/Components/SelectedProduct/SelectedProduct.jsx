@@ -12,7 +12,7 @@ export const SelectedProduct = () => {
   const productData = allProductData.filter((data) => data.productType === productType); 
   // const filtersData = filterData.filter((data) => data.productType === productType);
   
-  const Selected = useSelector((state) => state.filter);
+  const {brands , variants , price} = useSelector((state) => state.filter);
   const filtersData = () => {
   if(productType === "Shoe"){
     return(<div><FilterButton brands={ShoesBrands}
@@ -39,7 +39,7 @@ return (
 <div className={style.Filters_Warpper}>
   <div className={style.Filters}>
     {filtersData()}
-    {/* <button>{Selected}</button> */}
+    {/* <button>{brands}</button><button>{variants}</button><button>{price}</button> */}
   </div>
   <div className={style.Products_Wrapper}>
     {productData.map((obj) => {
