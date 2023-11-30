@@ -35,10 +35,26 @@ export const SelectedProduct = () => {
     pricerange={Price}/></div>)
    }
   };
+
+ const handle1click = () => {
+  console.log(brands);
+ }
+
+ const handle2click = () => {
+  console.log(variants);
+ }
+
+ const handle3click = () => {
+  console.log(price);
+ }
+
 return (
 <div className={style.Filters_Warpper}>
   <div className={style.Filters}>
     {filtersData()}
+    <button onClick={handle1click}>1</button>
+    <button onClick={handle2click}>2</button>
+    <button onClick={handle3click}>3</button>
     {/* <button>{brands}</button><button>{variants}</button><button>{price}</button> */}
   </div>
   <div className={style.Products_Wrapper}>

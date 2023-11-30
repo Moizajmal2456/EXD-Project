@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import produce from "immer";
 
 // const initialState = {
 //   brands: "", // Selected value for the brands select element
@@ -14,9 +15,21 @@ const filterSlice = createSlice ({
   price: "",
  },
    reducers:{
-     brandsFilter: (state, action) => state.brands = action.payload,
-     variantsFilter: (state, action) => state.variants = action.payload,
-     priceFilter: (state, action) => state.price = action.payload,
+    brandsFilter: (state, action) => {
+      return produce(state, (draft) => {
+        draft.brands = action.payload;
+      });
+    },
+    variantsFilter: (state, action) => {
+      return produce(state, (draft) => {
+        draft.variants = action.payload;
+      });
+    },
+    priceFilter: (state, action) => {
+      return produce(state, (draft) => {
+        draft.price = action.payload;
+      });
+    },
     },
 });
 
