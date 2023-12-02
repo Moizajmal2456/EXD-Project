@@ -1,12 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import produce from "immer";
 
-// const initialState = {
-//   brands: "", // Selected value for the brands select element
-//   variants: "", // Selected value for the variants select element
-//   price: "", // Selected value for the price select element
-// };
-
 const filterSlice = createSlice ({
  name:"filter",
  initialState: {
