@@ -7,7 +7,7 @@ export const AllProductData = [
         img:"../Images/Shirt1.webp",
         heading:"Round Neck TShirt",
         brand: "Khaadi",
-        variant:"Tshirt",
+        variant:"Tshirts",
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     {
@@ -152,7 +152,7 @@ export const AllProductData = [
         heading:"Ladies Bag",
         img:"../Images/BagsPic4.webp",
         brand: "Bagallery",
-        variant:"Clutches",
+        variant:"Clutchs",
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     {
