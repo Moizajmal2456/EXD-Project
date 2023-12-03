@@ -8,10 +8,23 @@ import { useSelector } from "react-redux";
 export const SelectedProduct = () => {
   const allProductData = [...AllProductData];
   const { productType } = useParams();
-  const productData = allProductData.filter((data) => data.productType === productType)
-  .filter((data) => brands ? data.brand === brands : true);
+  const productData = allProductData.filter((data) => data.productType === productType);
+  // .filter((data) => brands ? data.brand === brands : true);
   // .filter((data) => variants ? data.variant === variants : true)
   // .filter((data) => price ? (data.price >= price.min && data.price <= price.max) : true); 
+
+  // const productData = allProductData.filter((data) => {
+  //   // Check product type
+  //   const isProductTypeMatch = data.productType === productType;
+  
+  //   // Check other conditions only if the corresponding filter is not empty
+  //   const isBrandMatch = brands ? data.brand === brands : true;
+  //   const isVariantMatch = variants ? data.variant === variants : true;
+  //   const isPriceMatch = price ? data.price === price : true;
+  
+  //   // Return true only if all conditions are met
+  //   return isProductTypeMatch && isBrandMatch && isVariantMatch && isPriceMatch;
+  // });
   
   const {brands , variants , price} = useSelector((state) => state.filter);
   const filtersData = () => {
