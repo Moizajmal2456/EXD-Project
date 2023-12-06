@@ -30,6 +30,7 @@ return(
             <li className={styles.Home}>
              <Link to="/aboutus">About Us</Link>
             </li>
+            {/* <div className={styles.div}></div> */}
           <div className={styles.Select_Wrapper}>
              <select onChange={handleOptionSelected}>
                  <option value="Product">Select Product</option>
