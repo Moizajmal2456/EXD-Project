@@ -39,6 +39,9 @@
             img{
                 width: 15%;
             }
+            &:hover{
+                cursor: pointer;
+              }
         }
     }
 }
@@ -74,6 +77,9 @@
           .Images{
               gap: 10px;
               display: flex;
+              &:hover{
+                cursor: pointer;
+              }
           }
       }
   }
@@ -111,6 +117,9 @@
           .Images{
               gap: 10px;
               display: flex;
+              &:hover{
+                cursor: pointer;
+              }
           }
       }
   }
