@@ -95,6 +95,7 @@
 @media(min-width: 769px) and (max-width: 2560px) { 
     .card_col{
         width: 25%;
+        margin-left: 2%;
         .card{
         width: 100%;
         display: flex;
@@ -104,6 +105,9 @@
         .card_wrapper{
             display: block;
             text-align: center;
+            margin-left: 2%;
+            border: 2px solid white;
+            border-radius: 10px;
             .card_icon{
                 margin-bottom: 10px;
                 margin-right: auto;
@@ -135,9 +139,9 @@
                     vertical-align: baseline;
                 }
             }
-        }
-        &:hover{
-            border: 2px solid black;
+            &:hover{
+                border: 2px solid black;
+            }
         }
         }
     }
