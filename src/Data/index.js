@@ -8,6 +8,7 @@ export const AllProductData = [
         heading:"Round Neck TShirt",
         brand: "Khaadi",
         variant:"Tshirts",
+        stars:4,
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     {
@@ -19,6 +20,7 @@ export const AllProductData = [
         img:"../Images/Shirt2.webp",
         brand: "Maria B",
         variant:"Check Shirts",
+        stars:5,
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },  
     { 
@@ -30,6 +32,7 @@ export const AllProductData = [
         img :"../Images/Shirt3.jpg",
         brand: "Junaid Jamshed",
         variant:"Dress Shirts",
+        stars:4,
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     {   
@@ -41,6 +44,7 @@ export const AllProductData = [
         img:"../Images/Shirt4.jpg",
         brand: "Gul Ahmed",
         variant:"Sleeveless",
+        stars:5,
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     {   
@@ -52,6 +56,7 @@ export const AllProductData = [
         img:"../Images/Shirt4.jpg",
         brand: "Limelight",
         variant:"Round Neck Shirts",
+        stars:3,
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     {
@@ -63,6 +68,7 @@ export const AllProductData = [
         img:"../Images/Pent1.jpg",
         brand: "Zara",
         variant:"Jeans Pents",
+        stars:4,
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },  
     {
@@ -74,6 +80,7 @@ export const AllProductData = [
         img:"../Images/Pent2.jpg",
         brand: "Diesel",
         variant:"Dress Pents",
+        stars:3,
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     {  
@@ -85,6 +92,7 @@ export const AllProductData = [
         img :"../Images/Pent3.webp",
         brand: "Kayazar",
         variant:"Cotton Pents",
+        stars:5,
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
 
     },
@@ -97,6 +105,7 @@ export const AllProductData = [
         img:"../Images/Pent4.jpg",
         brand: "Outfitters",
         variant:"Trousers",
+        stars:3,
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",  
     },
     {
@@ -108,6 +117,7 @@ export const AllProductData = [
         img:"../Images/Pent1.jpg",
         brand: "Crossroads",
         variant:"Leggings",
+        stars:4,
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     {
@@ -119,6 +129,7 @@ export const AllProductData = [
       img:"../Images/BagsPic1.webp",
       brand: "Borjan",
       variant:"College Bags",
+      stars:4,
       text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     {
@@ -130,6 +141,7 @@ export const AllProductData = [
         img:"../Images/BagsPic2.jpeg",
         brand: "Stylo",
         variant:"Laptop Bags",
+        stars:5,
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     { 
@@ -141,6 +153,7 @@ export const AllProductData = [
         img :"../Images/BagsPic3.jpeg",
         brand: "Totes Pk",
         variant:"Ladies Bags",
+        stars:5,
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
 
     },
@@ -153,6 +166,7 @@ export const AllProductData = [
         img:"../Images/BagsPic4.webp",
         brand: "Bagallery",
         variant:"Clutchs",
+        stars:4,
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     {
@@ -164,6 +178,7 @@ export const AllProductData = [
         img:"../Images/BagsPic1.webp",
         brand: "Astore",
         variant:"Travelling Bags",
+        stars:3,
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     {
@@ -175,6 +190,7 @@ export const AllProductData = [
         img:"../Images/Shoes1.webp",
         brand: "Service",
         variant:"Joggers",
+        stars:5,
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     {
@@ -186,6 +202,7 @@ export const AllProductData = [
         img:"../Images/Shoes2.webp",
         brand: "Bata",
         variant:"Sneekers",
+        stars:4,
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     {  
@@ -196,7 +213,8 @@ export const AllProductData = [
         heading:"Skin Color Shoes",
         img :"../Images/Shoes3.jpg",
         brand: "Ndure",
-        variant:"Leather Shoes",
+        variant:"Leather Shoes", 
+        stars:5,
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     {  
@@ -208,6 +226,7 @@ export const AllProductData = [
         img :"../Images/Shoes3.jpg",
         brand: "ECS",
         variant:"Athletic Shoes",
+        stars:5,
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
     {  
@@ -219,6 +238,7 @@ export const AllProductData = [
         img :"../Images/Shoes3.jpg",
         brand: "Metro",
         variant:"Sandals",
+        stars:4,
         text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur, voluptas maxime tempora blanditiis quidem esse quas dolores officiis et est natus molestias rerum nisi ipsa voluptatem possimus. Minima, praesentium?",
     },
 ];

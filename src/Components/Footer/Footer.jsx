@@ -32,7 +32,7 @@ return(
       </div>
    </div>
    <div className={style.Terms}> 
-      <p>Copyright 2023 Graana. All rights reserved</p>
+      <p>Copyright 2023. All rights reserved</p>
       <p>Terms & Conditions | Privacy Policy | Desclaimer</p>
   </div>
 </div>

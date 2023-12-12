@@ -13,6 +13,7 @@ return(
        price={product.price}
        buttonText={product.buttonText}
        productID={product.id}
+       star={product.stars}
       />
     )})}
  </div>
