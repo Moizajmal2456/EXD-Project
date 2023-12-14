@@ -72,6 +72,7 @@ return (
       price={obj.price}
       buttonText={obj.buttonText}
       productID={obj.id}
+      star={obj.stars}
     />) })}
   </div>
 </div>
