@@ -3,7 +3,7 @@ import { Navbar } from "../Components/Navbar/Navbar";
 import { Orderdetail } from "../OrderDetail/orderDetail";
 
 
-export const LoginPage = () => {
+export const OrderDetailPage = () => {
 return(
     <>
     <Navbar/>

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
 import { useParams } from 'react-router-dom';
 import { AllProductData } from '../../Data';
 import { useDispatch, useSelector } from 'react-redux';
-import { decrement, increment } from '../../Reducers/counter';
+import counter, { decrement, increment } from '../../Reducers/counter';
 import { configureStore } from '@reduxjs/toolkit';
 
 export const AddToCartPage = () => {
@@ -49,7 +50,9 @@ export const AddToCartPage = () => {
         </div>
       </div>
       <div className={styles.bill_section}>
+      <Link to={`/orderdetail/`}>
         <button className={styles.final_btn}>Proceed To Pay</button>
+        </Link>
       </div>
     </div>
   );
