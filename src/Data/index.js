@@ -479,3 +479,26 @@ export const ServiceData = [
         btnText:"Read More",
     },
 ]
+export const DummyData = [
+    {
+      img :"../Images/Shoes3.jpg",
+      price:1240,
+      quantity: 2,
+    },
+    {
+        img :"../Images/Shoes3.jpg",
+        price:1480,
+        quantity: 1,
+    },
+    {
+        img :"../Images/Shoes3.jpg",
+        price:1100,
+        quantity: 3,
+
+    },
+    {
+        img :"../Images/Shoes3.jpg",
+        price:1300,
+        quantity: 2,
+    },
+]

@@ -1,0 +1,84 @@
+.orderWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .allOrders{
+     gap: 2%;
+     width: 90%;
+     margin: 5% auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     border: 2px solid grey;
+     border-radius: 10px;
+     .order{
+        gap: 2%;
+        width: 90%;
+        margin: 5% auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 2px solid grey;
+        border-radius: 10px;
+     }
+     img{
+        width: 10%;
+     }
+    }
+    .contactForm{
+     width: 90%;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     .name{
+      gap: 1%;
+      display: flex;
+      margin-top: 1%;
+      justify-content: center;
+      input{
+        width: 40%;
+        font-size: 20px;
+        border-radius: 5px;
+        border: 1px solid;
+      }
+     }
+     .contactDetails{
+        gap: 1%;
+        display: flex;
+        margin-top: 1%;
+        justify-content: center;
+        input{
+            width: 40%;
+            font-size: 20px;
+            border-radius: 5px;
+            border: 1px solid;
+          }
+     }
+     .address{
+        gap: 1%;
+        display: flex;
+        margin-top: 1%;
+        justify-content: center;
+        input{
+            width: 40%;
+            font-size: 20px;
+            border-radius: 5px;
+            border: 1px solid;
+          }
+     }
+     .message{
+        gap: 1%;
+        display: flex;
+        margin: 1%;
+        justify-content: center;
+        textarea{
+            width: 83%;
+            font-size: 20px;
+            border-radius: 5px;
+            border: 1px solid;
+        }
+     }
+
+    }
+}

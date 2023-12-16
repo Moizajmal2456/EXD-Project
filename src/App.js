@@ -12,6 +12,7 @@ import { AddCartPage } from './Pages/AddToCartPage';
 import { SelectedProductPages } from './Pages/SelectedProduct';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/database';
+import { OrderDetailPage } from './Pages/OrderDetail';
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
       <Route path="/forgotpassword" element={<ForgotPasswordPage/>}/>
       <Route path="/addtocartpage/:id" element={<AddCartPage/>}/>
       <Route path="/detailpage/:id" element={<DetailPage/>}/>
+      <Route path="/orderdetail" element={<OrderDetailPage/>}/>
       <Route path="/detailpage/:id" element={<PrivateRoute/>} >
       </Route>
     </Routes>

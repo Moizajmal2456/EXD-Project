@@ -50,7 +50,7 @@ export const AddToCartPage = () => {
         </div>
       </div>
       <div className={styles.bill_section}>
-      <Link to={`/orderdetail/`}>
+      <Link to={`/orderdetail`}>
         <button className={styles.final_btn}>Proceed To Pay</button>
         </Link>
       </div>
