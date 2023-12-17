@@ -481,22 +481,26 @@ export const ServiceData = [
 ]
 export const DummyData = [
     {
+      id:1,
       img :"../Images/Shoes3.jpg",
       price:1240,
       quantity: 2,
     },
     {
+        id:2,
         img :"../Images/Shoes3.jpg",
         price:1480,
         quantity: 1,
     },
     {
+        id:3,
         img :"../Images/Shoes3.jpg",
         price:1100,
         quantity: 3,
 
     },
     {
+        id:4,
         img :"../Images/Shoes3.jpg",
         price:1300,
         quantity: 2,

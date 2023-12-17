@@ -8,7 +8,9 @@ export const Orderdetail = () => {
             <div className={style.allOrders}>
                  {DummyData.map(product => {
                    return(
-                  <OrderCard image={product.img}
+                  <OrderCard
+                  id={product.id}
+                  image={product.img}
                   price={product.price}
                   quantity={product.quantity}/>
                   )})}
