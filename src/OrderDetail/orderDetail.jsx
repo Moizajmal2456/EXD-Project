@@ -1,27 +1,17 @@
 import style from "./styles.module.scss";
 import { DummyData } from "../Data";
+import { OrderCard } from "../Cards/Card/OrderCard/orderCard";
 
 export const Orderdetail = () => {
     return(
         <div className={style.orderWrapper}>
             <div className={style.allOrders}>
-                <div className={style.order}>
-                 {/* {DummyData.map(product => {
-                  return(
-                    <img src={product.img} alt="Shoes"/>,
-                    <p>Price: {product.price}</p>,
-                    <p>Quantity: {product.quantity}</p>
-                 )})} */}
-                    <img src="../Images/Shoes3.jpg" alt="Shoes"/>
-                    <p>Price: 200</p>
-                    <p>Quantity: 2</p>
-                    <img src="../Images/Shoes3.jpg" alt="Shoes"/>
-                    <p>Price: 200</p>
-                    <p>Quantity: 2</p>
-                    <img src="../Images/Shoes3.jpg" alt="Shoes"/>
-                    <p>Price: 200</p>
-                    <p>Quantity: 2</p>
-                </div>
+                 {DummyData.map(product => {
+                   return(
+                  <OrderCard image={product.img}
+                  price={product.price}
+                  quantity={product.quantity}/>
+                  )})}
            </div>
            <div className={style.contactForm}>
              <h2>Contact Details</h2>
