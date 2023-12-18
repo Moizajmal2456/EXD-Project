@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import styles from "./styles.module.scss";
 import { AllProductData } from '../../Data';
 import { Link, useParams } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch, useSelector } from 'react-redux';
 import { decrement, increment } from '../../Reducers/counter';
 
@@ -20,6 +22,7 @@ export const Detail = () => {
   
   const { id } = useParams();
   const product = AllProductData.find((m) => m.id == id);
+  const stars = Array(product.stars).fill(<FontAwesomeIcon icon={faStar} />);
 
   return (
     <div className={styles.container}>
@@ -30,11 +33,7 @@ export const Detail = () => {
         <h1>{product.heading}</h1>
         <p>{product.text}</p>
         <p className={styles.stars}>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
+          {stars}
         </p>
         <b>Price{product.price}</b>
         {/* <div className={styles.counter}>
