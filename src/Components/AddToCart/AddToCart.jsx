@@ -6,6 +6,7 @@ import { AllProductData } from '../../Data';
 import { useDispatch, useSelector } from 'react-redux';
 import counter, { decrement, increment } from '../../Reducers/counter';
 import { configureStore } from '@reduxjs/toolkit';
+import { handleimage, handleprice, handlequantity } from '../../Reducers/order';
 
 export const AddToCartPage = () => {
 
@@ -24,6 +25,11 @@ export const AddToCartPage = () => {
   const price = product.price;
   const result =  price * Count;
 
+  const handleProceedClick = () => {
+   dispatch(handleimage(product.img));
+   dispatch(handlequantity(Count));
+   dispatch(handleprice(price));
+  }
   return (
     <div className={styles.container}>
       <div className={styles.item_section}>
@@ -34,7 +40,7 @@ export const AddToCartPage = () => {
             </div>
             <div className={styles.text_wrap}>
               <h3>{product.heading}</h3>
-              <p>only 6 item in stock</p>
+              <p>only {product.quantity} item in stock</p>
             </div>
           </div>
           <div className={styles.price_detail}>
@@ -51,7 +57,7 @@ export const AddToCartPage = () => {
       </div>
       <div className={styles.bill_section}>
       <Link to={`/orderdetail`}>
-        <button className={styles.final_btn}>Proceed To Pay</button>
+        <button className={styles.final_btn} onClick={handleProceedClick}>Proceed To Pay</button>
         </Link>
       </div>
     </div>

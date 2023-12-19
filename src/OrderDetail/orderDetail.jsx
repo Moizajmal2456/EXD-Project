@@ -1,8 +1,13 @@
 import style from "./styles.module.scss";
 import { DummyData } from "../Data";
 import { OrderCard } from "../Cards/Card/OrderCard/orderCard";
+import { useSelector } from "react-redux";
 
 export const Orderdetail = () => {
+
+  const Count = useSelector((state) => state.counter);
+  const {image , price, quantity} = useSelector((state) => state.Orderdetail);
+  
     return(
         <div className={style.orderWrapper}>
             <div className={style.allOrders}>
@@ -12,7 +17,7 @@ export const Orderdetail = () => {
                   id={product.id}
                   image={product.img}
                   price={product.price}
-                  quantity={product.quantity}/>
+                  quantity={Count}/>
                   )})}
            </div>
            <div className={style.contactForm}>

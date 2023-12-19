@@ -4,28 +4,28 @@ import produce from "immer";
 const orderSlice = createSlice ({
  name:"orderdetail",
  initialState: {
-     img: "",
+     image: "",
      price: "",
      quantity: "",
  },
    reducers:{
-    image: (state, action) => {
+    handleimage: (state, action) => {
       return produce(state, (draft) => {
-        draft.brands = action.payload;
+        draft.image = action.payload;
       });
     },
-    price: (state, action) => {
-      return produce(state, (draft) => {
-        draft.variants = action.payload;
-      });
-    },
-    quantity: (state, action) => {
+    handleprice: (state, action) => {
       return produce(state, (draft) => {
         draft.price = action.payload;
+      });
+    },
+    handlequantity: (state, action) => {
+      return produce(state, (draft) => {
+        draft.quantity = action.payload;
       });
     },
     },
 });
 
-export const {image, price, quantity} = orderSlice.actions;
+export const {handleimage, handleprice, handlequantity} = orderSlice.actions;
 export default orderSlice.reducer;
