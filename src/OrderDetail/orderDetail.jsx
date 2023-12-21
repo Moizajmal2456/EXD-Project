@@ -11,14 +11,17 @@ export const Orderdetail = () => {
     return(
         <div className={style.orderWrapper}>
             <div className={style.allOrders}>
-                 {DummyData.map(product => {
+              <img src={image} alt="product image"/>
+              <p>{price}</p>
+              <p>{quantity}</p>
+                 {/* {DummyData.map(product => {
                    return(
                   <OrderCard
                   id={product.id}
                   image={product.img}
                   price={product.price}
                   quantity={Count}/>
-                  )})}
+                  )})} */}
            </div>
            <div className={style.contactForm}>
              <h2>Contact Details</h2>
