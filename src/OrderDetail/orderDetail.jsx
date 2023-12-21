@@ -6,22 +6,22 @@ import { useSelector } from "react-redux";
 export const Orderdetail = () => {
 
   const Count = useSelector((state) => state.counter);
-  const {image , price, quantity} = useSelector((state) => state.Orderdetail);
+  const {id, productImg, price, quantity} = useSelector((state) => state.orderdetail);
   
     return(
         <div className={style.orderWrapper}>
             <div className={style.allOrders}>
-              <img src={image} alt="product image"/>
+              {/* <img src={productImg} alt="product image"/>
               <p>{price}</p>
-              <p>{quantity}</p>
-                 {/* {DummyData.map(product => {
+              <p>{quantity}</p> */}
+                 {DummyData.map(product => {
                    return(
                   <OrderCard
-                  id={product.id}
-                  image={product.img}
-                  price={product.price}
-                  quantity={Count}/>
-                  )})} */}
+                  id={id}
+                  image={productImg}
+                  price={price}
+                  quantity={quantity}/>
+                  )})}
            </div>
            <div className={style.contactForm}>
              <h2>Contact Details</h2>
