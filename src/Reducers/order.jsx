@@ -5,12 +5,11 @@ const orderSlice = createSlice ({
  name:"orderdetail",
  initialState: {
      id:0,
-     productImg: "",
-     price: "",
-     quantity: "",
+     productImg: "../Images/Shirt3.jpg",
+     price: 2150,
+     quantity: 1,
  },
    reducers:{
-
     handleId: (state) => {
       return produce(state, (draft) => {
         draft.id += 1;

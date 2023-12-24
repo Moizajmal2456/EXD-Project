@@ -25,14 +25,31 @@ export const AddToCartPage = () => {
   const price = product.price;
   const result =  price * Count;
 
+//   const handleImg = () => {
+//     const img = product.img
+//     dispatch(handleImage(img));
+//     console.log(img);
+//  }
+
+//  const handlePrc = () => {
+//    dispatch(handlePrice(result));
+//    console.log(result);
+// }
+
+// const handleQun = () => {
+//   dispatch(handleQuantity(Count));
+//   console.log(Count);
+// }
+
+
+const dataToSend = {
+  prop1: product.img,
+  prop2: result,
+  prop3: Count
+};
+
   const handleProceedClick = () => {
-   dispatch(handleImage(product.img));
-   dispatch(handleQuantity(Count));
-   dispatch(handlePrice(result));
-   dispatch(handleId());
-   console.log(product.img);
-   console.log(Count);
-   console.log(result);
+    console.log(dataToSend);
   }
   return (
     <div className={styles.container}>
@@ -60,7 +77,7 @@ export const AddToCartPage = () => {
         </div>
       </div>
       <div className={styles.bill_section}>
-      <Link to={`/orderdetail`}>
+      <Link to={{pathname:`/orderdetail`, state: dataToSend}}>
         <button className={styles.final_btn} onClick={handleProceedClick}>Proceed To Pay</button>
         </Link>
       </div>

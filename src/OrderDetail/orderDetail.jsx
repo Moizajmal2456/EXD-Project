@@ -3,25 +3,29 @@ import { DummyData } from "../Data";
 import { OrderCard } from "../Cards/Card/OrderCard/orderCard";
 import { useSelector } from "react-redux";
 
-export const Orderdetail = () => {
+export const Orderdetail = ({Data}) => {
 
   const Count = useSelector((state) => state.counter);
-  const {id, productImg, price, quantity} = useSelector((state) => state.orderdetail);
+  const Product = useSelector((state) => state.orderdetail);
   
+  const test = () => {
+    console.log(Data.prop1);
+  }
     return(
         <div className={style.orderWrapper}>
             <div className={style.allOrders}>
               {/* <img src={productImg} alt="product image"/>
               <p>{price}</p>
               <p>{quantity}</p> */}
-                 {DummyData.map(product => {
+                 {/* {DummyData.map(data => {
                    return(
                   <OrderCard
-                  id={id}
-                  image={productImg}
-                  price={price}
-                  quantity={quantity}/>
-                  )})}
+                  id={Data.id}
+                  image={Data.image}
+                  price={Data.price}
+                  quantity={Data.Count}/>
+                  )})} */}
+                  <button onClick={test}>Test</button>
            </div>
            <div className={style.contactForm}>
              <h2>Contact Details</h2>
