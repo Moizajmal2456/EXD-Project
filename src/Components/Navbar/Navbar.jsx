@@ -42,15 +42,6 @@ return(
             <li className={styles.Home}>
              <Link to="/selectedproduct/Shoe">Shoes</Link>
             </li>
-          {/* <div className={styles.Select_Wrapper}>
-             <select onChange={handleOptionSelected}>
-                 <option value="Product">Select Product</option>
-                 <option value="Shirt">Shirts</option>
-                 <option value="Pent">Pents</option>
-                 <option value="Bag">Bags</option>
-                 <option value="Shoe">Shoes</option>
-             </select>
-          </div> */}
         </ul>
   </div>
   <div className={styles.Right_Section}>
