@@ -1,20 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import style from "./styles.module.scss";
 import { Cards } from "../../Cards/Card/Cards";
-import { AllProductData, BagsBrands, BagsVariant, PentsBrands, PentsVariant, Price, ShirtsBrands, ShirtsVariant, ShoesBrands, ShoesVariant, filterData} from "../../Data";
+import { AllProductData, filterData} from "../../Data";
 import { useParams } from "react-router-dom";
-import { FilterButton } from "../Filtering/FilterButton";
-import { useSelector } from "react-redux";
 
 export const SelectedProduct = () => {
-  const [productData, setProductData] = useState([]);
+  // const [productData, setProductData] = useState([]);
 
   const allProductData = [...AllProductData];
   const { productType } = useParams();
-  const {brands , variants , price} = useSelector((state) => state.filter);
-  
+  const productData = allProductData.filter((data) => data.productType === productType);
   const filters = filterData.filter((data) => data.productType === productType);
-
+  
   // useEffect(() => {
   //   // Your filtering logic
   //   const filteredData = allProductData.filter((data) => {
@@ -34,11 +31,26 @@ export const SelectedProduct = () => {
   //   setProductData(filteredData);
   // }, [productType, brands, variants, price]);
 
+ const handleBrandsChange = (event) => {
+ const selectedBrand = event.target.value;
+ const productData = allProductData.filter((data) => data.brand === selectedBrand);
+ }
+
+ const handleVariantsChange = (event) => {
+  const selectedVariant = event.target.value;
+  const productData = allProductData.filter((data) => data.variant === selectedVariant);
+ }
+
+ const handlePriceChange = (event) => {
+  const selectedPrice = event.target.value;
+  const productData = allProductData.filter((data) => data.price === selectedPrice);
+ }
+
 return (
 <div className={style.Filters_Warpper}>
   <div className={style.Filters}>
     <div className={style.BrandFilter}>
-      <select id="brands-sorting" >
+      <select id="brands-sorting" onChange={handleBrandsChange} >
         {filters.map((brand) => {
           return(
             <option key={brand.id} value={brand.brandName}>{brand.brandName}</option>
@@ -47,7 +59,7 @@ return (
       </select>
     </div>
     <div className={style.VariantFilter}>
-      <select id="variants-sorting" >
+      <select id="variants-sorting" onChange={handleVariantsChange}>
         {filters.map((variant) => {
          return(
             <option key={variant.id} value={variant.variantName}>{variant.variantName}</option>
@@ -56,7 +68,7 @@ return (
       </select>
     </div>
     <div className={style.PriceFilter}>
-      <select id="price-sorting" >
+      <select id="price-sorting" onChange={handlePriceChange} >
         {filters.map((price) => {
           return(
             <option key={price.id} value={price.price}>{price.price}</option>
