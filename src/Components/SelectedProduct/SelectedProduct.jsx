@@ -34,16 +34,19 @@ export const SelectedProduct = () => {
  const handleBrandsChange = (event) => {
  const selectedBrand = event.target.value;
  const productData = allProductData.filter((data) => data.brand === selectedBrand);
+ return productData;
  }
 
  const handleVariantsChange = (event) => {
   const selectedVariant = event.target.value;
   const productData = allProductData.filter((data) => data.variant === selectedVariant);
+  return productData;
  }
 
  const handlePriceChange = (event) => {
   const selectedPrice = event.target.value;
   const productData = allProductData.filter((data) => data.price === selectedPrice);
+  return productData;
  }
 
 return (
