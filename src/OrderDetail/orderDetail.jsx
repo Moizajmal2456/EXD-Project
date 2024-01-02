@@ -17,15 +17,15 @@ export const Orderdetail = ({Data}) => {
               {/* <img src={productImg} alt="product image"/>
               <p>{price}</p>
               <p>{quantity}</p> */}
-                 {/* {DummyData.map(data => {
+                 {DummyData.map(data => {
                    return(
                   <OrderCard
-                  id={Data.id}
-                  image={Data.image}
-                  price={Data.price}
-                  quantity={Data.Count}/>
-                  )})} */}
-                  <button onClick={test}>Test</button>
+                  id={data.id}
+                  image={data.img}
+                  price={data.price}
+                  quantity={data.quantity}/>
+                  )})}
+                  {/* <button onClick={test}>Test</button> */}
            </div>
            <div className={style.contactForm}>
              <h2>Contact Details</h2>
