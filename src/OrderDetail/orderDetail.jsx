@@ -2,14 +2,18 @@ import style from "./styles.module.scss";
 import { DummyData } from "../Data";
 import { OrderCard } from "../Cards/Card/OrderCard/orderCard";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router-dom";
 
 export const Orderdetail = ({Data}) => {
 
+  const location = useLocation();
+  const dataToSend = location.state;
   const Count = useSelector((state) => state.counter);
   const Product = useSelector((state) => state.orderdetail);
   
   const test = () => {
-    console.log(Data.prop1);
+    console.log(location);
+    console.log(dataToSend);
   }
     return(
         <div className={style.orderWrapper}>
@@ -17,15 +21,15 @@ export const Orderdetail = ({Data}) => {
               {/* <img src={productImg} alt="product image"/>
               <p>{price}</p>
               <p>{quantity}</p> */}
-                 {DummyData.map(data => {
+                 {/* {DummyData.map(data => {
                    return(
                   <OrderCard
                   id={data.id}
                   image={data.img}
                   price={data.price}
                   quantity={data.quantity}/>
-                  )})}
-                  {/* <button onClick={test}>Test</button> */}
+                  )})} */}
+                  <button onClick={test}>Test</button>
            </div>
            <div className={style.contactForm}>
              <h2>Contact Details</h2>

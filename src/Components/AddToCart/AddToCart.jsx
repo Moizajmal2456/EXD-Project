@@ -12,6 +12,7 @@ export const AddToCartPage = () => {
 
   const Count = useSelector((state) => state.counter);
   const dispatch = useDispatch();
+  const [userData , setUserData] = useState();
 
   const { id } = useParams();
   const product = AllProductData.find((data) => data.id == id); 
@@ -49,7 +50,8 @@ const dataToSend = {
 };
 
   const handleProceedClick = () => {
-    console.log(dataToSend);
+    setUserData(dataToSend);
+    console.log(userData);
   }
   return (
     <div className={styles.container}>
@@ -77,7 +79,7 @@ const dataToSend = {
         </div>
       </div>
       <div className={styles.bill_section}>
-      <Link to={{pathname:`/orderdetail`, state: dataToSend}}>
+      <Link to={{pathname:`/orderdetail`, state: userData}}>
         <button className={styles.final_btn} onClick={handleProceedClick}>Proceed To Pay</button>
         </Link>
       </div>

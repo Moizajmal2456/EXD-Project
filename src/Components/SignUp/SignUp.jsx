@@ -8,17 +8,17 @@ export const SignUp = () => {
     const [mobileNo , setMobile] = useState();
     const [password , setPassword] = useState();
 
-  const handleNameChange = ( event) => {
+  const handleNameChange = ( event ) => {
     setUserName(event.target.value);
     console.log(userName);
   };
 
-  const handleEmailChange = ( event) => {
+  const handleEmailChange = ( event ) => {
     setEmail(event.target.value);
     console.log(email);
   };
 
-  const handleMobileChange = ( event) => {
+  const handleMobileChange = ( event ) => {
     setMobile(event.target.value);
     console.log(mobileNo);
   };
@@ -47,10 +47,10 @@ return(
 <div className={style.SignIn_Wrapper}>
   <div className={style.Input_Fields}>
    <h2>Signup to your account</h2>
-   <input className={style.Email} type="string" name="userName" placeholder="UserName" onChange={handleNameChange}/>
-   <input className={style.Email} type="string" name="email" placeholder="Email" onChange={handleEmailChange}/>
-   <input className={style.Email} type="Number" name="mobileNo" placeholder="Mobile Number" onChange={handleMobileChange}/>
-   <input className={style.Email} type="password" name="password" placeholder="Password" onChange={handlePasswordChange}/>
+   <input className={style.Email} type="string" name="userName" placeholder="UserName" required onChange={handleNameChange}/>
+   <input className={style.Email} type="string" name="email" placeholder="Email" required onChange={handleEmailChange}/>
+   <input className={style.Email} type="Number" name="mobileNo" placeholder="Mobile Number" required onChange={handleMobileChange}/>
+   <input className={style.Email} type="password" name="password" placeholder="Password" required onChange={handlePasswordChange}/>
    <button className={style.Button} type="submit" onClick={handleSubmit}>Sign Up</button>
   </div>
 </div>
