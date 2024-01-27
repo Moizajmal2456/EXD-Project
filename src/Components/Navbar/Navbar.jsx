@@ -46,7 +46,7 @@ return(
   </div>
   <div className={styles.Right_Section}>
       <button>
-        <Link to="/login">Login </Link>
+         <Link to="/login">Login </Link>
       </button>
       <i className="fa-solid fa-cart-shopping"></i>
   </div>
